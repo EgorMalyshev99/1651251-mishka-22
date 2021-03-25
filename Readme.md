@@ -1,7 +1,7 @@
-# Личный проект «Мишка» 
+# Личный проект «Мишка»
 
-* Студент: [Егор Малышев](https://up.htmlacademy.ru/adaptive/22/user/1651251).
-* Наставник: `Неизвестно`.
+- Студент: [Егор Малышев](https://up.htmlacademy.ru/adaptive/22/user/1651251).
+- Наставник: [Максим Иванов](https://htmlacademy.ru/profile/id342945).
 
 ---
 
