@@ -1,0 +1,39 @@
+.socials {
+  padding-bottom: 27px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.inst {
+  width: 22px;
+  height: 21px;
+  background-image: url(../img/inst.svg);
+}
+
+.fb {
+  width: 15px;
+  height: 28px;
+  background-image: url(../img/facebook.svg);
+}
+
+.twitter {
+  width: 23px;
+  height: 20px;
+  background-image: url(../img/twitter.svg);
+}
+
+.socials-item {
+  display: flex;
+}
+
+.socials-item+.socials-item {
+  margin-left: 41px;
+}
+
+.socials-link {
+  width: 100%;
+}

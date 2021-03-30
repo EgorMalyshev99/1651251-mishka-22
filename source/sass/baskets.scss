@@ -1,0 +1,49 @@
+.baskets {
+  position: relative;
+  padding-bottom: 36px;
+  padding-top: 31px;
+
+  &::after {
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background-image: url(../img/zigzag-line.svg);
+    background-repeat: repeat-x;
+
+    @media (max-width: 320px) {
+      height: 6px;
+    }
+  }
+}
+
+.baskets-heading__wrapper {
+  margin-bottom: 3px;
+}
+
+.baskets-banner {
+  font-family: OpenSansBold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63D1BB;
+  text-transform: uppercase;
+}
+
+.baskets-text__wrapper {
+  width: 260px;
+  margin: 17px 0 28px 0;
+}
+
+.baskets-text {
+  margin: 0;
+}
+
+.basket-cost__wrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@import "baskets-table";
+@import "cost";

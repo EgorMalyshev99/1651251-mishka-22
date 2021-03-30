@@ -1,0 +1,32 @@
+.header-bottom {
+  background-image: url(../img/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    background-image: url(../img/hero-tablet.jpg);
+    background-position-y: -40px;
+  }
+
+  @media (max-width: 320px) {
+    background-position-y: -17px;
+    background-image: url(../img/hero-mobile.jpg);
+    background-size: contain;
+  }
+}
+
+.header-bottom__heading {
+  width: 260px;
+  margin-top: 73px;
+  margin-bottom: 120px;
+  text-align: center;
+  font-family: OpenSansBold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+@import "offers";

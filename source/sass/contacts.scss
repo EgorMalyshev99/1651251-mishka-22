@@ -1,0 +1,36 @@
+.contacts {
+  padding-top: 38px;
+  padding-bottom: 39px;
+}
+
+.contacts-heading__wrapper {
+  margin-bottom: 28px;
+}
+
+.contacts-heading {
+  font-size: 18px;
+}
+
+.adress__wrapper {
+  margin-bottom: 62px;
+}
+
+.adress-email,
+.adress-city {
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+}
+
+.adress-name {
+  margin-right: 30px;
+}
+
+.contacts-button {
+  @media (max-width: 767px) {
+    height: 52px;
+  }
+}
+
+@import "map";
+@import "standart-button";

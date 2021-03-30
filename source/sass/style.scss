@@ -1,1 +1,88 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: OpenSans;
+  src: local(OpenSans), url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: local(OpenSans), url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.container {
+  max-width: none;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    max-width: none;
+    padding: 0 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.second-heading {
+  margin: 0;
+  font-family: OpenSansBold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@import "header-top";
+@import "header-bottom";
+@import "baskets";
+@import "about";
+@import "comments";
+@import "contacts";
+@import "footer";

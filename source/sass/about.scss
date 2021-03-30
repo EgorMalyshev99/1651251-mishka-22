@@ -1,0 +1,25 @@
+.about {
+  padding-top: 31px;
+  padding-bottom: 58px;
+}
+
+.about-heading__wrapper {
+  margin-bottom: 28px;
+}
+
+.about-list {
+  display: grid;
+  gap: 33px;
+}
+
+.about-item {
+  svg {
+    margin-bottom: 20px;
+  }
+}
+
+.about-item__text {
+  font-family: OpenSansBold;
+  font-size: 17px;
+  line-height: 20px;
+}
