@@ -1,0 +1,49 @@
+.name-heading__wrapper {
+  margin-bottom: 28px;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+.name-input {
+  display: flex;
+  flex-direction: column;
+
+  +.name-input {
+    margin-top: 22px;
+  }
+
+  .filter-input-name {
+    height: 52px;
+    border: none;
+    box-shadow: inset 0px -2px 0px #000000;
+    order: 2;
+
+    @include placeholder {
+      font-size: 17px;
+      line-height: 18px;
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+
+  .name-label {
+    order: 1;
+    margin-left: 0;
+  }
+}

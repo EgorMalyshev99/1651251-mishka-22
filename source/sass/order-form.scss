@@ -1,0 +1,54 @@
+.order-text__wrapper {
+  margin-top: 17px;
+  margin-bottom: 29px;
+}
+
+.order-text {
+  font-size: 13px;
+  color: #444;
+}
+
+.filter-option {
+  label {
+    margin-left: 61px;
+    font-family: OpenSansBold;
+    font-size: 17px;
+    line-height: 18px;
+    position: relative;
+  }
+
+  label::before {
+    box-sizing: border-box;
+  }
+}
+
+.filter__wrap {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-heading {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  color: #62D1BA;
+  font-family: OpenSansBold;
+  font-size: 17px;
+  line-height: 16px;
+
+  &::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #62D1BA;
+  }
+}
+
+@import "order-radio";
+@import "order-checkbox";
+@import "name-input";
