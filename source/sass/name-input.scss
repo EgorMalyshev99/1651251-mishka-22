@@ -1,0 +1,24 @@
+.name__wrap {
+  margin-bottom: 35px;
+}
+
+.name-heading__wrapper {
+  margin-bottom: 28px;
+}
+
+.name-input {
+  flex-direction: column;
+
+  +.name-input {
+    margin-top: 22px;
+  }
+
+  .filter-input-name {
+    order: 2;
+  }
+
+  .name-label {
+    order: 1;
+    margin-left: 0;
+  }
+}

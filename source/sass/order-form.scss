@@ -1,0 +1,102 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+.order-text__wrapper {
+  margin-top: 17px;
+  margin-bottom: 29px;
+}
+
+.order-text {
+  font-size: 13px;
+  color: #444;
+}
+
+.filter-option {
+  display: flex;
+
+  label {
+    margin-left: 61px;
+    font-family: OpenSansBold;
+    font-size: 17px;
+    line-height: 18px;
+    position: relative;
+  }
+
+  label::before {
+    box-sizing: border-box;
+  }
+}
+
+.filter__wrap {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-heading {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  color: #62D1BA;
+  font-family: OpenSansBold;
+  font-size: 17px;
+  line-height: 16px;
+
+  &::after {
+    content: "";
+    width: 78%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #62D1BA;
+  }
+}
+
+.filter-input {
+  width: 100%;
+  height: 52px;
+  border: none;
+  box-shadow: inset 0px -2px 0px #000000;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+
+  @include placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.3;
+  }
+}
+
+.form-tip {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #444;
+  display: inline-block;
+}
+
+@import "order-radio";
+@import "order-checkbox";
+@import "name-input";
+@import "telephone-input";
+@import "email-input";
+@import "extra-input";

@@ -1,0 +1,39 @@
+.type__wrap {
+  margin-bottom: 30px;
+}
+
+.type-heading__wrapper {
+  margin-bottom: 35px;
+}
+
+.type-radio {
+  height: 42px;
+  display: flex;
+  align-items: center;
+
+  label::before {
+    width: 42px;
+    height: 42px;
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -61px;
+    border: 2px solid #000;
+    border-radius: 50%;
+  }
+}
+
+.type-radio+.type-radio {
+  margin-top: 24px;
+}
+
+.filter-input-radio:checked+label::after {
+  width: 18px;
+  height: 18px;
+  content: "";
+  position: absolute;
+  left: -49px;
+  top: 4px;
+  background-color: #62D1BA;
+  border-radius: 50%;
+}

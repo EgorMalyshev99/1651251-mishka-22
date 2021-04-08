@@ -1,0 +1,40 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+.extra__wrap {
+  margin-bottom: 17px;
+}
+
+.extra-heading__wrapper {
+  margin-bottom: 23px;
+}
+
+.textarea-extra {
+  padding: 17px;
+  width: 100%;
+  height: 142px;
+  border: 2px solid #444444;
+  resize: none;
+
+  @include placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.3;
+  }
+}

@@ -31,15 +31,12 @@
 }
 
 .slider-button {
+  width: 50%;
+  height: 52px;
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid #ECECEC;
-
-  @media (max-width: 767px) {
-    width: 50%;
-    height: 52px;
-  }
 }
 
 .next {
