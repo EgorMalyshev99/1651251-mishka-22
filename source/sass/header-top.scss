@@ -3,6 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include phones {
+    background-color: red;
+  }
+
+  @include tablets {
+    background-color: blue;
+  }
+
+  @include desktop {
+    background-color: green;
+  }
+
 }
 
 .main-header__logo {
