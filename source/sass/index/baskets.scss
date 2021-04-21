@@ -5,19 +5,16 @@
 
   &::after {
     width: 100%;
+    height: 6px;
     content: "";
     position: absolute;
     bottom: -6px;
     background-image: url(../img/zigzag-line.svg);
     background-repeat: repeat-x;
-
-    @media (max-width: 320px) {
-      height: 6px;
-    }
   }
 }
 
-.baskets-heading__wrapper {
+.baskets-heading {
   margin-bottom: 3px;
 }
 
@@ -25,20 +22,16 @@
   font-family: OpenSansBold;
   font-size: 17px;
   line-height: 20px;
-  color: #63D1BB;
+  color: $aquamarine;
   text-transform: uppercase;
 }
 
-.baskets-text__wrapper {
+.baskets-text {
   width: 260px;
   margin: 17px 0 28px 0;
 }
 
-.baskets-text {
-  margin: 0;
-}
-
-.basket-cost__wrapper {
+.basket-cost {
   margin-top: 24px;
   display: flex;
   flex-direction: column;

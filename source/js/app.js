@@ -1,7 +1,7 @@
 const closeMenu__btn = document.querySelector(".main-nav__toggle");
-const mainNav = document.querySelector(".main-nav__wrapper");
+const mainNav = document.querySelector(".main-nav__inner");
 
 closeMenu__btn.addEventListener("click", (evt) => {
-  closeMenu__btn.classList.toggle("menu__closed");
+  closeMenu__btn.classList.toggle("menu-closed");
   mainNav.classList.toggle("main-nav__closed");
 });

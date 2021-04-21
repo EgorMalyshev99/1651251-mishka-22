@@ -41,33 +41,35 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle menu__closed" type="button">
+        <button class="main-nav__toggle menu-closed" type="button">
           <span class="main-nav__open visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper main-nav__closed">
-          <ul class="main-nav__list site-list">
+        <div class="main-nav__inner main-nav__closed">
+          <ul class="main-nav-list site-list">
             <li class="site-list__item">
-              <a class="nav-text" href="catalog.html">
+              <a class="site-list-link nav-text" href="catalog.html">
                 <span>Каталог товаров</span>
               </a>
             </li>
             <li class="site-list__item">
-              <a class="nav-text">
+              <a class="site-list-link nav-text">
                 <span>Вязание на заказ</span>
               </a>
             </li>
           </ul>
           <div class="main-nav__list user-list">
-            <a class="site-list__item site-search">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="user-list__item site-search">
+              <svg class="site-list-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2"
                   d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"
                   fill="black" />
               </svg>
               <span class="nav-text">Поиск по сайту</span>
             </a>
-            <a class="site-list__item cart">
-              <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="user-list__item cart">
+              <svg class="site-list-icon" width="21" height="18" viewBox="0 0 21 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2"
                   d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"
                   fill="black" />
@@ -85,17 +87,14 @@
 
   <main class="content">
     <div class="container">
-      <div class="order-text__wrapper">
-        <p class="order-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
-          свяжемся
-          с вами, чтобы уточнить детали.
-        </p>
-      </div>
+      <p class="standart-text order-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+        и мы
+        свяжемся
+        с вами, чтобы уточнить детали.
+      </p>
       <form class="order-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter__wrap type__wrap">
-          <div class="type-heading__wrapper">
-            <legend class="filter-heading type-heading">Тип:</legend>
-          </div>
+        <fieldset class="filter type">
+          <legend class="filter-heading type-heading">Тип:</legend>
           <ul class="type-list">
             <li class="filter-option type-radio">
               <input class="visually-hidden filter-input-radio filter-input" type="radio" name="type"
@@ -108,10 +107,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter__wrap color__wrap">
-          <div class="color-heading__wrapper">
-            <legend class="filter-heading color-heading">Цвет:</legend>
-          </div>
+        <fieldset class="filter color">
+          <legend class="filter-heading color-heading">Цвет:</legend>
           <ul class="color-list">
             <li class="filter-option color-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="color"
@@ -145,10 +142,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter__wrap name__wrap">
-          <div class="name-heading__wrapper">
-            <legend class="filter-heading name-heading">ФИО</legend>
-          </div>
+        <fieldset class="filter name">
+          <legend class="filter-heading name-heading">ФИО</legend>
           <ul class="name-list">
             <li class="filter-option name-input">
               <input class="filter-input-name filter-input" type="text" name="name" id="name-firstname"
@@ -167,30 +162,24 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter__wrap telephone__wrap">
-          <div class="telephone-heading__wrapper">
-            <legend class="filter-heading telephone-heading">Тел</legend>
-          </div>
+        <fieldset class="filter telephone">
+          <legend class="filter-heading telephone-heading">Тел</legend>
           <div class="filter-option telephone-input">
             <input class="filter-input filter-input-telephone" type="tel" name="telephone" id="telephone-id"
               placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             <label class="telephone-label" for="telephone-id"></label>
           </div>
         </fieldset>
-        <fieldset class="filter__wrap email__wrap">
-          <div class="email-heading__wrapper">
-            <legend class="filter-heading email-heading">E-mail</legend>
-          </div>
+        <fieldset class="filter email">
+          <legend class="filter-heading email-heading">E-mail</legend>
           <div class="filter-option email-input">
             <input class="filter-input filter-input-email" type="email" name="email" id="email-id"
               placeholder="Ваш Email*" required>
             <label class="email-label" for="email-id"></label>
           </div>
         </fieldset>
-        <fieldset class="filter__wrap extra__wrap">
-          <div class="extra-heading__wrapper">
-            <legend class="filter-heading extra-heading">Доп</legend>
-          </div>
+        <fieldset class="filter extra">
+          <legend class="filter-heading extra-heading">Доп</legend>
           <div class="filter-option extra-input">
             <textarea class="textarea-extra" name="extra" id="extra-id"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>

@@ -10,6 +10,15 @@
     url("../fonts/opensansbold.woff") format("woff");
 }
 
+$black: #000000;
+$white: #ffffff;
+$gray: #ECECEC;
+$aquamarine: #63D1BB;
+$darkaquamarine: #56C3B2;
+$biege: #F1F1F1;
+$darkgray: #444444;
+$lightgray: #e5e5e5;
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(255, 255, 255);
+  background: $white;
   font-family: OpenSans, Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 24px;
@@ -75,16 +84,35 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
 }
 
-.content {
-  padding-bottom: 55px;
+.standart-text {
+  margin: 0;
 }
 
-@import "header-top";
-@import "header-bottom";
-@import "baskets";
-@import "about";
-@import "comments";
-@import "contacts";
-@import "footer";
-@import "header-order";
-@import "order-form";
+.standart-table {
+  width: 100%;
+}
+
+
+/****Header****/
+@import "./header/header-top.scss";
+@import "./header/header-bottom.scss";
+
+/****Index****/
+@import "./index/baskets.scss";
+@import "./index/about.scss";
+@import "./index/comments.scss";
+@import "./index/contacts.scss";
+
+/****Form****/
+@import "./order/header-order.scss";
+@import "./order/order-form.scss";
+
+/****Catalog****/
+@import "./catalog/header-catalog.scss";
+@import "./catalog/products.scss";
+
+/****Footer****/
+@import "./footer/footer.scss";
+
+/****Colors****/
+@import "./elements/colors.scss";

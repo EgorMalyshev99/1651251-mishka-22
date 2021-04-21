@@ -1,4 +1,4 @@
-.comments-heading__wrapper {
+.comments-heading {
   margin-bottom: 14px;
 }
 
@@ -8,15 +8,12 @@
 
   &::after {
     width: 100%;
+    height: 6px;
     content: "";
     position: absolute;
     bottom: -6px;
     background-image: url(../img/zigzag-line.svg);
     background-repeat: repeat-x;
-
-    @media (max-width: 767px) {
-      height: 6px;
-    }
   }
 }
 

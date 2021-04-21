@@ -3,20 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  background-position-y: -40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media (max-width: 767px) {
-    background-image: url(../img/hero-tablet.jpg);
-    background-position-y: -40px;
-  }
-
-  @media (max-width: 320px) {
-    background-position-y: -17px;
-    background-image: url(../img/hero-mobile.jpg);
-    background-size: contain;
-  }
 }
 
 .header-bottom__heading {
@@ -29,4 +19,4 @@
   line-height: 30px;
 }
 
-@import "offers";
+@import "../index/offers.scss";

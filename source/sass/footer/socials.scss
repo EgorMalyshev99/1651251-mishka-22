@@ -1,6 +1,6 @@
 .socials {
   padding-bottom: 27px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $lightgray;
 }
 
 .socials-list {
@@ -37,3 +37,5 @@
 .socials-link {
   width: 100%;
 }
+
+@import "../elements/colors.scss";

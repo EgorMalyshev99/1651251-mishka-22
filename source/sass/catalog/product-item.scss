@@ -1,0 +1,52 @@
+.products-list__item {
+  display: flex;
+  flex-direction: column
+}
+
+.products-list__item+.products-list__item {
+  margin-top: 30px;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.product-description {
+  padding: 28px;
+  background-color: $white;
+  border: 1px solid $gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-description__top {
+  padding-bottom: 17px;
+  border-bottom: 1px solid $gray;
+}
+
+.product-name,
+.product-characteristics {
+  display: inline-block;
+}
+
+.product-name {
+  font-family: OpenSansBold;
+  font-size: 17px;
+}
+
+.product-characteristics {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.product-description__bottom {
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-cost {
+  font-size: 15px;
+  font-family: OpenSansBold;
+}

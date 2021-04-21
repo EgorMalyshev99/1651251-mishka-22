@@ -16,12 +16,12 @@
   background-color: #fff;
 }
 
-.menu__closed {
+.menu-closed {
   height: 14px;
   background-image: url(../img/burger.svg);
 }
 
-.main-nav__wrapper {
+.main-nav__inner {
   display: block;
   // transform: translateY(0px);
   // transition: all 0.5s ease;
@@ -33,31 +33,32 @@
   // transition: all 0.5s ease;
 }
 
-.main-nav__list {
+.main-nav-list {
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-.site-list__item {
+.site-list__item,
+.user-list__item {
   position: relative;
   height: 79px;
   font-family: OpenSansBold;
   font-size: 17px;
-  box-shadow: 0px 1px 0px #ECECEC, inset 0px 1px 0px #ECECEC;
+  box-shadow: 0px 1px 0px $gray, inset 0px 1px 0px $gray;
   display: flex;
   align-items: center;
 }
 
-.site-list__item a {
-  color: black;
+.site-list-link {
+  color: $black;
 }
 
 .nav-text {
   margin-left: 28%;
 }
 
-.site-list__item svg {
+.site-list-icon {
   position: absolute;
   left: 13%;
 }
