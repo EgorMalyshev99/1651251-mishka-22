@@ -1,10 +1,10 @@
-.comments-heading {
-  margin-bottom: 14px;
-}
-
 .comments {
   position: relative;
   padding-bottom: 45px;
+
+  &__heading {
+    margin-bottom: 14px;
+  }
 
   &::after {
     width: 100%;

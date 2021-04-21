@@ -3,24 +3,25 @@
   border: 1px solid $gray;
   display: flex;
   flex-direction: column;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__heading {
+    font-family: OpenSansBold;
+    font-size: 17px;
+  }
+
+  &__heading,
+  &__text {
+    display: inline-block;
+  }
+
+  &__text {
+    font-size: 13px;
+  }
 }
 
-.card-img {
-  width: 100%;
-}
-
-.card-heading,
-.card-text {
-  display: inline-block;
-}
-
-.card-heading {
-  font-family: OpenSansBold;
-  font-size: 17px;
-}
-
-.card-text {
-  font-size: 13px;
-}
 
 @import "./variables.scss";

@@ -1,38 +1,40 @@
-.products-list__item+.products-list__item {
-  margin-top: 30px;
-}
+.product {
+  &+.product {
+    margin-top: 30px;
+  }
 
-.product-description {
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-
-  &__top {
-    padding-bottom: 17px;
-    border-bottom: 1px solid $gray;
+  &-description {
+    padding: 28px;
     display: flex;
     flex-direction: column;
+
+    &__top {
+      padding-bottom: 17px;
+      border-bottom: 1px solid $gray;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__bottom {
+      padding-top: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
-  &__bottom {
-    padding-top: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  %__name {
+    margin-bottom: 10px;
   }
-}
 
-.product-name {
-  margin-bottom: 10px;
-}
+  &__characteristics {
+    line-height: 30px;
+  }
 
-.product-characteristics {
-  line-height: 30px;
-}
-
-.product-cost {
-  font-size: 15px;
-  font-family: OpenSansBold;
+  &__cost {
+    font-size: 15px;
+    font-family: OpenSansBold;
+  }
 }
 
 @import "../elements/card.scss";

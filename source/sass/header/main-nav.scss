@@ -1,42 +1,42 @@
 .main-nav {
   width: 100%;
   position: relative;
-}
 
-.main-nav__toggle {
-  width: 21px;
-  height: 20px;
-  position: absolute;
-  top: -50px;
-  right: 30px;
-  border: none;
-  outline: none;
-  background-image: url(../img/menu-close.svg);
-  background-repeat: no-repeat;
-  background-color: #fff;
+  &__toggle {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-image: url(../img/menu-close.svg);
+    background-repeat: no-repeat;
+    background-color: #fff;
+  }
+
+  &__inner {
+    display: block;
+    // transform: translateY(0px);
+    // transition: all 0.5s ease;
+  }
+
+  &__closed {
+    display: none;
+    // transform: translateY(-400px);
+    // transition: all 0.5s ease;
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .menu-closed {
   height: 14px;
   background-image: url(../img/burger.svg);
-}
-
-.main-nav__inner {
-  display: block;
-  // transform: translateY(0px);
-  // transition: all 0.5s ease;
-}
-
-.main-nav__closed {
-  display: none;
-  // transform: translateY(-400px);
-  // transition: all 0.5s ease;
-}
-
-.main-nav-list {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 .site-list__item,

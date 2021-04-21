@@ -3,12 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.develop-text {
-  margin-right: 27px;
-  margin-bottom: 10px;
-  font-family: OpenSansBold;
-  font-size: 19px;
-  line-height: 18px;
+  &__text {
+    margin-right: 27px;
+    margin-bottom: 10px;
+    font-family: OpenSansBold;
+    font-size: 19px;
+    line-height: 18px;
+  }
 }

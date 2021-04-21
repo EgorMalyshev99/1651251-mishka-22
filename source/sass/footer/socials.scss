@@ -1,11 +1,23 @@
 .socials {
   padding-bottom: 27px;
   border-bottom: 1px solid $lightgray;
-}
 
-.socials-list {
-  display: flex;
-  justify-content: center;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+
+    &+.socials__item {
+      margin-left: 41px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+  }
 }
 
 .inst {
@@ -24,18 +36,6 @@
   width: 23px;
   height: 20px;
   background-image: url(../img/twitter.svg);
-}
-
-.socials-item {
-  display: flex;
-}
-
-.socials-item+.socials-item {
-  margin-left: 41px;
-}
-
-.socials-link {
-  width: 100%;
 }
 
 @import "../elements/colors.scss";

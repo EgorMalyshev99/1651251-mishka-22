@@ -1,24 +1,24 @@
 .slide {
   display: none;
+
+  &__text {
+    width: 260px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__author {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .current-slide {
   display: block;
-}
-
-.slide-text {
-  width: 260px;
-  margin-bottom: 18px;
-  font-size: 15px;
-  line-height: 30px;
-}
-
-.slide-author {
-  margin-bottom: 30px;
-  font-size: 17px;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .author-name {

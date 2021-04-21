@@ -7,16 +7,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
-.header-bottom__heading {
-  width: 260px;
-  margin-top: 73px;
-  margin-bottom: 120px;
-  text-align: center;
-  font-family: OpenSansBold;
-  font-size: 27px;
-  line-height: 30px;
+  &__heading {
+    width: 260px;
+    margin-top: 73px;
+    margin-bottom: 120px;
+    text-align: center;
+    font-family: OpenSansBold;
+    font-size: 27px;
+    line-height: 30px;
+  }
 }
 
 @import "../index/offers.scss";

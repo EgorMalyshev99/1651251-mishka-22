@@ -1,25 +1,25 @@
 .about {
   padding-top: 31px;
   padding-bottom: 58px;
-}
 
-.about-heading {
-  margin-bottom: 28px;
-}
-
-.about-list {
-  display: grid;
-  gap: 33px;
-}
-
-.about-item {
-  svg {
-    margin-bottom: 20px;
+  &__heading {
+    margin-bottom: 28px;
   }
-}
 
-.about-item__text {
-  font-family: OpenSansBold;
-  font-size: 17px;
-  line-height: 20px;
+  &__list {
+    display: grid;
+    gap: 33px;
+  }
+
+  &__item {
+    svg {
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      font-family: OpenSansBold;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
 }
