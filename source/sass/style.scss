@@ -10,14 +10,8 @@
     url("../fonts/opensansbold.woff") format("woff");
 }
 
-$black: #000000;
-$white: #ffffff;
-$gray: #ECECEC;
-$aquamarine: #63D1BB;
-$darkaquamarine: #56C3B2;
-$biege: #F1F1F1;
-$darkgray: #444444;
-$lightgray: #e5e5e5;
+@import "./elements/variables.scss";
+@import "./elements/mixins.scss";
 
 * {
   box-sizing: border-box;
@@ -92,7 +86,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-
 /****Header****/
 @import "./header/header-top.scss";
 @import "./header/header-bottom.scss";
@@ -110,6 +103,7 @@ input[type="radio"].visually-hidden {
 /****Catalog****/
 @import "./catalog/header-catalog.scss";
 @import "./catalog/products.scss";
+@import "./catalog/production.scss";
 
 /****Footer****/
 @import "./footer/footer.scss";

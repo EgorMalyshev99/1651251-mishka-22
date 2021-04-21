@@ -1,0 +1,26 @@
+.card {
+  background-color: $white;
+  border: 1px solid $gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-heading,
+.card-text {
+  display: inline-block;
+}
+
+.card-heading {
+  font-family: OpenSansBold;
+  font-size: 17px;
+}
+
+.card-text {
+  font-size: 13px;
+}
+
+@import "./variables.scss";
