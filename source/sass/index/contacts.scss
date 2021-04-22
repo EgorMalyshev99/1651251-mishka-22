@@ -1,32 +1,81 @@
+@import "./map.scss";
+@import "../elements/standart-button.scss";
+@import "../elements/variables.scss";
+
 .contacts {
   padding-top: 38px;
   padding-bottom: 39px;
 
-  &__heading {
-    margin-bottom: 28px;
+  .second-heading {
     font-size: 18px;
+
+    @include tablets {
+      font-size: 43px;
+    }
+  }
+
+  &__heading {
+    position: relative;
+    margin-bottom: 28px;
+
+    &::after {
+      @include tablets {
+        content: "";
+        width: 47px;
+        height: 81px;
+        position: absolute;
+        right: 0;
+        top: -15px;
+        background-image: url(../../img/flag.svg);
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include tablets {
+      margin-bottom: 49px;
+    }
   }
 
   &__button {
     height: 52px;
+
+    @include tablets {
+      margin: 0 auto;
+      width: 230px;
+    }
+  }
+
+  @include tablets {
+    padding-top: 68px;
   }
 }
 
-
 .adress {
   margin-bottom: 62px;
-}
-
-.adress-email,
-.adress-city {
-  font-size: 14px;
-  line-height: 30px;
   display: flex;
-}
+  flex-direction: column;
 
-.adress-name {
-  margin-right: 30px;
-}
+  &__email {
+    margin-right: 30px;
 
-@import "../footer/map.scss";
-@import "../elements/standart-button.scss";
+    p {
+      border-bottom: 1px solid $aquamarine;
+    }
+  }
+
+  &__email,
+  &__city {
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__name {
+    margin-right: 30px;
+  }
+
+  @include tablets {
+    flex-direction: row;
+  }
+}

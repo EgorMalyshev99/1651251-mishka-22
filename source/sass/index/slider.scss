@@ -1,3 +1,49 @@
+.slider {
+  &__button {
+    width: 50%;
+    height: 52px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ECECEC;
+
+    @include tablets {
+      width: 50px;
+      height: 26px;
+      border: none;
+    }
+
+    &+.slider__button {
+      @include tablets {
+        margin-left: 37px;
+      }
+    }
+  }
+
+  &__controls {
+    .controls {
+      margin-bottom: 38px;
+      display: flex;
+
+      @include tablets {
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    .add-note {
+      @include tablets {
+        width: 175px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
 .slide {
   display: none;
 
@@ -6,14 +52,23 @@
     margin-bottom: 18px;
     font-size: 15px;
     line-height: 30px;
+
+    @include tablets {
+      width: 100%;
+      font-size: 17px;
+      margin-bottom: 61px;
+    }
   }
 
   &__author {
     margin-bottom: 30px;
     font-size: 17px;
-    line-height: 30px;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+      line-height: 30px;
+    }
   }
 }
 
@@ -25,30 +80,12 @@
   font-family: OpenSansBold;
 }
 
-.controls {
-  margin-bottom: 38px;
-  display: flex;
-}
-
-.slider-button {
-  width: 50%;
-  height: 52px;
-  background-color: #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 1px solid #ECECEC;
-}
-
 .next {
   background-image: url(../img/arrow-right.svg);
 }
 
 .prev {
   background-image: url(../img/arrow-left.svg);
-}
-
-.add-note {
-  height: 52px;
 }
 
 @import "../elements/standart-button.scss";

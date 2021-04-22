@@ -1,6 +1,18 @@
+@import "../elements/mixins.scss";
+
 .offers {
+  position: relative;
   display: flex;
   flex-direction: column;
+
+  &.container {
+    margin: 0;
+    padding: 0;
+
+    @include tablets {
+      margin: 0 auto;
+    }
+  }
 
   &__item {
     flex-grow: 1;
@@ -13,12 +25,22 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @include tablets {
+        width: 334px;
+        height: 119px;
+      }
     }
 
     &-text {
       font-family: OpenSansBold;
       font-size: 19px;
       color: $white;
+
+      @include tablets {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
 
     &:nth-child(1) {
@@ -28,5 +50,9 @@
     &:nth-child(2) {
       background-color: $darkaquamarine;
     }
+  }
+
+  @include tablets {
+    flex-direction: row;
   }
 }

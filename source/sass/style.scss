@@ -10,7 +10,10 @@
     url("../fonts/opensansbold.woff") format("woff");
 }
 
+/****Colors****/
 @import "./elements/variables.scss";
+
+/****Adaptive****/
 @import "./elements/mixins.scss";
 
 * {
@@ -30,6 +33,19 @@ body {
   max-width: none;
   margin: 0 auto;
   padding: 0 30px;
+
+  @include phones {
+    padding: 0;
+    max-width: 400px;
+  }
+
+  @include tablets {
+    max-width: 668px;
+  }
+
+  @include desktop {
+    max-width: 1050px;
+  }
 }
 
 img {
@@ -71,11 +87,32 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.mobile-active {
+  display: block;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.tablets-active {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
 .second-heading {
   margin: 0;
   font-family: OpenSansBold;
   font-size: 25px;
   line-height: 30px;
+
+  @include tablets {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .standart-text {
@@ -95,6 +132,7 @@ input[type="radio"].visually-hidden {
 @import "./index/about.scss";
 @import "./index/comments.scss";
 @import "./index/contacts.scss";
+@import "./elements/zigzag.scss";
 
 /****Form****/
 @import "./order/header-order.scss";
@@ -107,6 +145,3 @@ input[type="radio"].visually-hidden {
 
 /****Footer****/
 @import "./footer/footer.scss";
-
-/****Colors****/
-@import "./elements/colors.scss";

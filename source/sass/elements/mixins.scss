@@ -1,3 +1,7 @@
+$desktop: 1150px;
+$tablets: 767px;
+$phones: 420px;
+
 @mixin desktop {
   @media screen and (min-width: $desktop) {
     @content;

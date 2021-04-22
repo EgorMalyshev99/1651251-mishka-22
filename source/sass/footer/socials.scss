@@ -18,6 +18,11 @@
   &__link {
     width: 100%;
   }
+
+  @include tablets {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .inst {

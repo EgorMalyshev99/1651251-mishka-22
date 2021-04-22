@@ -2,18 +2,38 @@
   position: relative;
   padding-bottom: 45px;
 
-  &__heading {
-    margin-bottom: 14px;
+  .container {
+    position: relative;
   }
 
-  &::after {
-    width: 100%;
-    height: 6px;
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    background-image: url(../img/zigzag-line.svg);
-    background-repeat: repeat-x;
+  &__heading {
+    margin-bottom: 14px;
+
+    @include tablets {
+      margin-bottom: 38px;
+    }
+  }
+
+  &::before {
+
+    @include tablets {
+      width: 350px;
+      height: 457px;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background-image: url(../../img/comments-bg.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include tablets {
+    height: 457px;
+    margin-bottom: 68px;
+    padding-top: 83px;
+    padding-bottom: 47px;
   }
 }
 

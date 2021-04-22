@@ -13,30 +13,125 @@
     background-image: url(../img/menu-close.svg);
     background-repeat: no-repeat;
     background-color: #fff;
-  }
 
-  &__inner {
-    display: block;
-    // transform: translateY(0px);
-    // transition: all 0.5s ease;
+    @include tablets {
+      display: none;
+    }
   }
 
   &__closed {
     display: none;
     // transform: translateY(-400px);
     // transition: all 0.5s ease;
+
+    @include tablets {
+      display: block;
+    }
+
+    @include tablets {
+      width: unset;
+    }
+  }
+
+  &__inner {
+    display: block;
+    // transform: translateY(0px);
+    // transition: all 0.5s ease;
+
+    @include tablets {
+      flex-grow: 1;
+    }
   }
 
   &__list {
     margin: 0;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+      height: 88px;
+      flex-direction: row;
+    }
+  }
+
+  @include tablets {
+    position: static;
+    width: 350px;
+    display: flex;
   }
 }
 
 .menu-closed {
   height: 14px;
   background-image: url(../img/burger.svg);
+}
+
+.user-list {
+  .site-search {
+    @include tablets {
+      width: 82px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .nav-text {
+        display: none;
+      }
+
+      .site-list-icon {
+        position: static;
+      }
+    }
+  }
+
+  .cart {
+    @include tablets {
+      flex-grow: 1;
+    }
+  }
+
+  &__item {
+    @include tablets {
+      border-left: 1px solid rgba($color: $black, $alpha: 0.1);
+    }
+  }
+
+  @include tablets {
+    flex-grow: 1;
+  }
+}
+
+.site-list {
+  .nav-text {
+    @include tablets {
+      margin-left: 0;
+    }
+  }
+
+  &__item {
+    background-color: transparent;
+
+    &+.site-list__item {
+      @include tablets {
+        margin-left: 36px;
+      }
+    }
+  }
+
+  &__link {
+    color: $black;
+  }
+
+  &-icon {
+    position: absolute;
+    left: 13%;
+  }
+
+  @include tablets {
+    position: absolute;
+    top: 88px;
+    left: 0;
+  }
 }
 
 .site-list__item,
@@ -48,17 +143,13 @@
   box-shadow: 0px 1px 0px $gray, inset 0px 1px 0px $gray;
   display: flex;
   align-items: center;
-}
 
-.site-list-link {
-  color: $black;
+  @include tablets {
+    height: 100%;
+    box-shadow: none;
+  }
 }
 
 .nav-text {
   margin-left: 28%;
-}
-
-.site-list-icon {
-  position: absolute;
-  left: 13%;
 }

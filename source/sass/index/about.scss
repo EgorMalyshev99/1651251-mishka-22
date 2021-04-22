@@ -4,14 +4,28 @@
 
   &__heading {
     margin-bottom: 28px;
+
+    @include tablets {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
     display: grid;
     gap: 33px;
+
+    @include tablets {
+      grid-template-columns: 45% 45%;
+      row-gap: 60px;
+      column-gap: 10%;
+    }
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     svg {
       margin-bottom: 20px;
     }
@@ -20,6 +34,26 @@
       font-family: OpenSansBold;
       font-size: 17px;
       line-height: 20px;
+
+      @include tablets {
+        font-size: 20px;
+        line-height: 22px;
+      }
     }
+
+    @include tablets {
+      &:nth-child(2) {
+        grid-row: 2 / 3;
+      }
+
+      &:nth-child(3) {
+        grid-row: 3 / 4;
+      }
+    }
+  }
+
+  @include tablets {
+    padding-top: 55px;
+    padding-bottom: 83px;
   }
 }

@@ -8,5 +8,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include tablets {
+      height: 457px;
+      background-image: url(../../img/map-tablet.png);
+    }
   }
 }
