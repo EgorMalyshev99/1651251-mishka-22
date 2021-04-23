@@ -19,20 +19,6 @@
     }
   }
 
-  &__closed {
-    display: none;
-    // transform: translateY(-400px);
-    // transition: all 0.5s ease;
-
-    @include tablets {
-      display: block;
-    }
-
-    @include tablets {
-      width: unset;
-    }
-  }
-
   &__inner {
     display: block;
     // transform: translateY(0px);
@@ -40,6 +26,17 @@
 
     @include tablets {
       flex-grow: 1;
+    }
+  }
+
+  &__closed {
+    display: none;
+    // transform: translateY(-400px);
+    // transition: all 0.5s ease;
+
+    @include tablets {
+      width: unset;
+      display: block;
     }
   }
 
