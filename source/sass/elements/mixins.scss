@@ -19,3 +19,55 @@ $phones: 420px;
     @content;
   }
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin image-1x($image, $x: 0%, $y: 0%, $size: cover, $repeat: no-repeat) {
+  @media (min-resolution: 1dppx) {
+    background: {
+      image: $image;
+      position: $x $y;
+      size: $size;
+      repeat: $repeat;
+    }
+  }
+}
+
+@mixin image-2x($image, $x: 0%, $y: 0%, $size: cover, $repeat: no-repeat) {
+  @media (min-resolution: 2dppx) {
+    background: {
+      image: $image;
+      position: $x $y;
+      size: $size;
+      repeat: $repeat;
+    }
+  }
+}
+
+
+@mixin image-4x($image, $x: 0%, $y: 0%, $size: cover, $repeat: no-repeat) {
+  @media (min-resolution: 4dppx) {
+    background: {
+      image: $image;
+      position: $x $y;
+      size: $size;
+      repeat: $repeat;
+    }
+  }
+}

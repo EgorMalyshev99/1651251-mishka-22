@@ -1,21 +1,3 @@
-@mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-
-  &:-moz-placeholder {
-    @content;
-  }
-
-  &::-moz-placeholder {
-    @content;
-  }
-
-  &:-ms-input-placeholder {
-    @content;
-  }
-}
-
 .order-form {
   padding-bottom: 55px;
 }
@@ -32,7 +14,8 @@
 
   label {
     margin-left: 61px;
-    font-family: OpenSansBold;
+    font-family: "OpenSans", Arial, Helvetica, sans-serif;;
+    font-weight: 700;
     font-size: 17px;
     line-height: 18px;
     position: relative;
@@ -55,7 +38,8 @@
   position: relative;
   text-transform: uppercase;
   color: #62D1BA;
-  font-family: OpenSansBold;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;;
+  font-weight: 700;
   font-size: 17px;
   line-height: 16px;
 

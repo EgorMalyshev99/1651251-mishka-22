@@ -1,13 +1,15 @@
 @font-face {
-  font-family: OpenSans;
+  font-family: "OpenSans";
   src: local(OpenSans), url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: OpenSansBold;
+  font-family: "OpenSans";
   src: local(OpenSans), url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
 }
 
 /****Colors****/
@@ -16,15 +18,21 @@
 /****Adaptive****/
 @import "./elements/mixins.scss";
 
-* {
+.page {
   box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
   background: $white;
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
@@ -105,7 +113,9 @@ input[type="radio"].visually-hidden {
 
 .second-heading {
   margin: 0;
-  font-family: OpenSansBold;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  ;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
 

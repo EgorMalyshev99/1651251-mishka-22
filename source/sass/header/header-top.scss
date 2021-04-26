@@ -28,11 +28,25 @@
   }
 }
 
-.main-header__logo {
-  margin: 22px 0;
+.main-header {
+  &__logo {
+    margin: 22px 0;
 
-  @include tablets {
-    margin: 0;
+    img {
+      width: 86px;
+
+      @include tablets {
+        width: 113px;
+      }
+
+      @include desktop {
+        width: 136px;
+      }
+    }
+
+    @include tablets {
+      margin: 0;
+    }
   }
 }
 
