@@ -10,7 +10,7 @@
     right: 30px;
     border: none;
     outline: none;
-    background-image: url(../img/menu-close.svg);
+    background-image: url(../../img/icons/menu-close.svg);
     background-repeat: no-repeat;
     background-color: #fff;
 
@@ -60,13 +60,13 @@
 
 .menu-closed {
   height: 14px;
-  background-image: url(../img/burger.svg);
+  background-image: url(../../img/icons/burger.svg);
 }
 
 .user-list {
   .site-search {
     @include tablets {
-      width: 82px;
+      width: 84px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -94,11 +94,13 @@
   }
 
   @include tablets {
-    flex-grow: 1;
+    justify-content: flex-end;
   }
 }
 
 .site-list {
+  position: relative;
+
   .nav-text {
     @include tablets {
       margin-left: 0;
@@ -124,8 +126,23 @@
     left: 13%;
   }
 
+  &::after {
+
+    @include tablets {
+      font-size: 15px;
+      content: "Бесплатная доставка по России";
+      height: 100%;
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
   @include tablets {
+    width: 100%;
     position: absolute;
+    z-index: 1;
     top: 88px;
     left: 0;
   }
@@ -135,7 +152,8 @@
 .user-list__item {
   position: relative;
   height: 79px;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  ;
   font-weight: 700;
   font-size: 17px;
   box-shadow: 0px 1px 0px $gray, inset 0px 1px 0px $gray;

@@ -1,11 +1,13 @@
 .zigzag {
   position: relative;
+  margin-bottom: 6px;
 
   &::after {
     width: 100%;
     height: 6px;
     content: "";
     position: absolute;
+    top: 100%;
     background-image: url(../../img/icons/zigzag-line.svg);
     background-repeat: repeat-x;
 
@@ -13,6 +15,10 @@
       height: 17px;
       background-image: url(../../img/icons/zigzag-line-bold.svg);
     }
+  }
+
+  @include tablets {
+    margin-bottom: 17px;
   }
 }
 

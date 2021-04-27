@@ -26,7 +26,7 @@
   }
 
   &__banner {
-    font-family: "OpenSans", Arial, Helvetica, sans-serif;;
+    font-family: "OpenSans", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
@@ -53,7 +53,7 @@
 
     @include tablets {
       width: 292px;
-      margin: 0 0 36px 0;
+      margin: 0 0 39px 0;
       font-size: 17px;
       line-height: 30px;
     }
@@ -62,16 +62,31 @@
   &__table {
     margin-bottom: 18px;
 
-    td {
-      border-bottom: 1px solid $gray;
-      padding: 12px 0;
+    tr {
+      td {
+        border-bottom: 1px solid $gray;
+        padding: 9px 0 12px 0;
+      }
+
+      &:nth-child(1) {
+        td {
+          padding-top: 0;
+        }
+      }
+    }
+
+    @include tablets {
+      margin-bottom: 0;
     }
   }
 
   &__img {
 
     @include tablets {
-      margin-top: 10px;
+      // margin-top: 10px;
+      position: absolute;
+      top: 115px;
+      right: 0;
     }
   }
 
@@ -82,7 +97,7 @@
     align-items: center;
 
     @include tablets {
-      margin-top: 45px;
+      margin-top: 57px;
     }
   }
 
@@ -95,6 +110,10 @@
     @include tablets {
       margin-top: 33px;
     }
+  }
+
+  .container {
+    position: relative;
   }
 
   @include tablets {

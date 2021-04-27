@@ -1,3 +1,4 @@
+/****Fonts****/
 @font-face {
   font-family: "OpenSans";
   src: local(OpenSans), url("../fonts/opensans.woff2") format("woff2"),
@@ -18,6 +19,7 @@
 /****Adaptive****/
 @import "./elements/mixins.scss";
 
+/****Global****/
 .page {
   box-sizing: border-box;
 }
@@ -79,6 +81,11 @@ button {
   padding: 0;
 }
 
+picture {
+  display: flex;
+}
+
+/****Elements****/
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -136,6 +143,7 @@ input[type="radio"].visually-hidden {
 /****Header****/
 @import "./header/header-top.scss";
 @import "./header/header-bottom.scss";
+@import "./header/header-heading.scss";
 
 /****Index****/
 @import "./index/baskets.scss";
@@ -145,11 +153,9 @@ input[type="radio"].visually-hidden {
 @import "./elements/zigzag.scss";
 
 /****Form****/
-@import "./order/header-order.scss";
 @import "./order/order-form.scss";
 
 /****Catalog****/
-@import "./catalog/header-catalog.scss";
 @import "./catalog/products.scss";
 @import "./catalog/production.scss";
 

@@ -77,16 +77,17 @@
 }
 
 .author-name {
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  ;
   font-weight: 700;
 }
 
 .next {
-  background-image: url(../img/arrow-right.svg);
+  background-image: url(../../img/icons/arrow-right.svg);
 }
 
 .prev {
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(../../img/icons/arrow-left.svg);
 }
 
 @import "../elements/standart-button.scss";

@@ -5,6 +5,7 @@
   &__list {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   &__item {
@@ -28,19 +29,19 @@
 .inst {
   width: 22px;
   height: 21px;
-  background-image: url(../img/inst.svg);
+  background-image: url(../../img/icons/socials/inst.svg);
 }
 
 .fb {
   width: 15px;
   height: 28px;
-  background-image: url(../img/facebook.svg);
+  background-image: url(../../img/icons/socials/facebook.svg);
 }
 
 .twitter {
   width: 23px;
   height: 20px;
-  background-image: url(../img/twitter.svg);
+  background-image: url(../../img/icons/socials/twitter.svg);
 }
 
 @import "../elements/colors.scss";

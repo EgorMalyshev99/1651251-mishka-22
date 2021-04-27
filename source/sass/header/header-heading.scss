@@ -1,9 +1,11 @@
-.header-catalog {
-  padding: 74px 0;
+.header-heading {
+  padding: 100px 0 75px 0;
   background-image: none;
   background-position-y: 0;
   background-color: $biege;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__text {}
 }

@@ -1,29 +1,48 @@
+@import "../elements/card.scss";
+
 .product {
   &+.product {
     margin-top: 30px;
+
+    @include tablets {
+      margin-top: 54px;
+    }
   }
 
   &-description {
-    padding: 28px;
+    padding: 27px 28px 26px 28px;
     display: flex;
     flex-direction: column;
 
     &__top {
       padding-bottom: 17px;
-      border-bottom: 1px solid $gray;
       display: flex;
       flex-direction: column;
+
+      @include tablets {
+        padding-bottom: 0;
+      }
     }
 
     &__bottom {
       padding-top: 22px;
+      border-top: 1px solid $gray;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+
+      @include tablets {
+        padding-top: 26px;
+      }
+    }
+
+    @include tablets {
+      width: 50%;
       justify-content: space-between;
     }
   }
 
-  %__name {
+  &__name {
     margin-bottom: 10px;
   }
 
@@ -33,9 +52,16 @@
 
   &__cost {
     font-size: 15px;
-    font-family: "OpenSans", Arial, Helvetica, sans-serif;;
+    font-family: "OpenSans", Arial, Helvetica, sans-serif;
     font-weight: 700;
+
+    @include tablets {
+      font-size: 17px;
+    }
+  }
+
+  @include tablets {
+    flex-direction: row;
+    justify-content: space-between
   }
 }
-
-@import "../elements/card.scss";
