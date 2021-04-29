@@ -4,6 +4,24 @@
 
   .container {
     position: relative;
+
+    &::before {
+      @include desktop {
+        width: 350px;
+        height: 457px;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -78px;
+        left: 0;
+        background-image: url(../../img/index/comments-bg.png);
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include desktop {
+      padding-left: 175px;
+    }
   }
 
   &__heading {
@@ -11,6 +29,10 @@
 
     @include tablets {
       margin-bottom: 38px;
+    }
+
+    @include desktop {
+      margin-bottom: 35px;
     }
   }
 
@@ -27,6 +49,10 @@
       background-image: url(../../img/index/comments-bg.png);
       background-repeat: no-repeat;
     }
+
+    @include desktop {
+      display: none;
+    }
   }
 
   @include tablets {
@@ -34,6 +60,11 @@
     margin-bottom: 68px;
     padding-top: 83px;
     padding-bottom: 47px;
+  }
+
+  @include desktop {
+    padding-top: 78px;
+    padding-bottom: 96px;
   }
 }
 

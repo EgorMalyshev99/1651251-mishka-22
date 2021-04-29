@@ -85,6 +85,13 @@
     @include tablets {
       flex-grow: 1;
     }
+
+    .nav-text {
+      @include tablets {
+        position: absolute;
+        right: 0;
+      }
+    }
   }
 
   &__item {

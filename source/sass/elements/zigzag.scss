@@ -13,12 +13,26 @@
 
     @include tablets {
       height: 17px;
+      margin-bottom: 17px;
       background-image: url(../../img/icons/zigzag-line-bold.svg);
+    }
+
+    @include desktop {
+      width: 1050px;
+      height: 23px;
+      background-image: url(../../img/icons/zigzag-line-desktop.svg);
+      left: 0;
+      right: 0;
+      margin: auto;
     }
   }
 
   @include tablets {
     margin-bottom: 17px;
+  }
+
+  @include desktop {
+    margin-bottom: 23px;
   }
 }
 
@@ -36,6 +50,8 @@
       background-image: url(../../img/icons/zigzag-fill-tablet.svg);
 
       @include desktop {
+        height: 34px;
+        bottom: -17px;
         background-image: url(../../img/icons/zigzag-fill-desktop.svg);
       }
     }

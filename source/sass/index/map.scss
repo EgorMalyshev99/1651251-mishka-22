@@ -4,14 +4,36 @@
   &__inner {
     width: 100%;
     height: 454px;
-    background-image: url(../../img/index/map-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include image-1x(url('../../img/index/map/map-mobile-1x.png'), center);
+    @include image-2x(url('../../img/index/map/map-mobile-2x.png'), center);
+    @include image-4x(url('../../img/index/map/map-mobile-4x.png'), center);
     background-position: center;
 
     @include tablets {
       height: 457px;
-      background-image: url(../../img/index/map-tablet.png);
+      @include image-1x(url('../../img/index/map/map-tablet-1x.png'), center);
+      @include image-2x(url('../../img/index/map/map-tablet-2x.png'), center);
+      @include image-4x(url('../../img/index/map/map-tablet-4x.png'), center);
     }
+
+    @include desktop {
+      width: 527px;
+      @include image-1x(url('../../img/index/map/map-desktop-1x.png'), 100%);
+      @include image-2x(url('../../img/index/map/map-desktop-2x.png'), 100%);
+      @include image-4x(url('../../img/index/map/map-desktop-4x.png'), 100%);
+    }
+  }
+
+  @include desktop {
+    // display: none;
+    width: 1050px;
+    margin: auto;
+    position: absolute;
+    top: 83px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
   }
 }

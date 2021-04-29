@@ -21,6 +21,11 @@
       column-gap: 10%;
       grid-auto-flow: column;
     }
+
+    @include desktop {
+      grid-template-columns: 44% 44%;
+      column-gap: 0%;
+    }
   }
 
   &__item {
@@ -45,8 +50,18 @@
     }
   }
 
+  .container {
+    @include desktop {
+      padding-left: 175px;
+    }
+  }
+
   @include tablets {
     padding-top: 55px;
     padding-bottom: 83px;
+  }
+
+  @include desktop {
+    padding-bottom: 90px;
   }
 }
