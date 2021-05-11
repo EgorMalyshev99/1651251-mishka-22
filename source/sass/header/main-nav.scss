@@ -48,6 +48,7 @@
     @include tablets {
       height: 88px;
       flex-direction: row;
+      align-items: center;
     }
   }
 
@@ -69,7 +70,6 @@
       width: 84px;
       display: flex;
       justify-content: center;
-      align-items: center;
 
       .nav-text {
         display: none;
@@ -121,16 +121,35 @@
       @include tablets {
         margin-left: 36px;
       }
-    }
-  }
 
-  &__link {
-    color: $black;
+      @include desktop {
+        margin-left: 0;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    @include desktop {
+      &:nth-child(1) {
+        padding-right: 35px;
+      }
+
+      &:nth-last-child(1) {
+        padding-left: 35px;
+      }
+    }
   }
 
   &-icon {
     position: absolute;
     left: 13%;
+  }
+
+  &.desktop-active {
+    @include desktop {
+      width: unset;
+      position: static;
+      display: flex;
+    }
   }
 
   &::after {
@@ -144,6 +163,10 @@
       display: flex;
       align-items: center;
     }
+
+    @include desktop {
+      display: none;
+    }
   }
 
   @include tablets {
@@ -153,16 +176,16 @@
     top: 88px;
     left: 0;
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .site-list__item,
 .user-list__item {
   position: relative;
   height: 79px;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
-  ;
-  font-weight: 700;
-  font-size: 17px;
   box-shadow: 0px 1px 0px $gray, inset 0px 1px 0px $gray;
   display: flex;
   align-items: center;
@@ -173,6 +196,47 @@
   }
 }
 
+.bottom-menu {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+
+  &__item {
+    &+.bottom-menu__item {
+      margin-left: 38px;
+    }
+
+    .nav-text {
+      font-size: 15px;
+    }
+  }
+
+  &::after {
+    font-size: 15px;
+    content: "Бесплатная доставка по России";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  @include desktop {
+    &.desktop-active {
+      display: flex;
+    }
+  }
+}
+
 .nav-text {
   margin-left: 28%;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+
+  @include tablets {
+    margin-left: 0;
+  }
 }

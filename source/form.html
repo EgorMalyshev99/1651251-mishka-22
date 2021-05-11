@@ -13,6 +13,18 @@
   <header class="main-header">
     <div class="header-top">
       <div class="container">
+        <ul class="main-nav__list site-list desktop-active">
+          <li class="site-list__item">
+            <a class="site-list__link nav-text" href="catalog.html">
+              <span>Каталог товаров</span>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link nav-text">
+              <span>Вязание на заказ</span>
+            </a>
+          </li>
+        </ul>
         <a class="main-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/icons/logo/logo-desktop.svg" type="image/svg+xml">
@@ -57,119 +69,142 @@
                 <span class="nav-text">Корзина: пока пуста</span>
               </a>
             </div>
+            <ul class="main-nav__list bottom-menu desktop-active">
+              <li class="bottom-menu__item"><a href="#" class="bottom-menu__link nav-text">Новые поступления</a></li>
+              <li class="bottom-menu__item"><a href="#" class="bottom-menu__link nav-text">Распродажа</a></li>
+            </ul>
           </div>
         </nav>
       </div>
     </div>
-    <div class="header-bottom header-heading">
+    <div class="header-bottom header-heading zigzag-filled">
       <h2 class="second-heading order-heading__text">Вязание на заказ</h2>
     </div>
   </header>
 
-  <main class="content">
-    <div class="container">
-      <p class="standart-text order-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
-        и мы
-        свяжемся
-        с вами, чтобы уточнить детали.
-      </p>
-      <form class="order-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter type">
-          <legend class="filter-heading type-heading">Тип:</legend>
-          <ul class="type-list">
-            <li class="filter-option type-radio">
-              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="type"
+  <main class="content form-content container">
+    <p class="standart-text order-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+      форму заказа
+      и мы
+      свяжемся
+      с вами, чтобы уточнить детали.
+    </p>
+    <form class="order-form" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter type">
+        <legend class="filter__heading type__heading">Тип</legend>
+        <div class="container">
+          <span class="filter__heading pseudo-legend">Тип</span>
+          <ul class="filter__option-wrapper type__list">
+            <li class="filter__option type__radio">
+              <input class="visually-hidden filter__input-radio filter__input" type="radio" name="type"
                 id="radio-accessory" checked>
               <label for="radio-accessory">Аксессуар для интерьера</label>
             </li>
-            <li class="filter-option type-radio">
-              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="type" id="radio-toy">
+            <li class="filter__option type__radio">
+              <input class="visually-hidden filter__input-radio filter__input" type="radio" name="type" id="radio-toy">
               <label for="radio-toy">Детская игрушка</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="filter color">
-          <legend class="filter-heading color-heading">Цвет:</legend>
-          <ul class="color-list">
-            <li class="filter-option color-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="color"
+        </div>
+      </fieldset>
+      <fieldset class="filter color">
+        <legend class="filter__heading color__heading">Цвет</legend>
+        <div class="container">
+          <span class="filter__heading pseudo-legend">Цвет</span>
+          <ul class="filter__option-wrapper color__list">
+            <li class="filter__option color__checkbox">
+              <input class="visually-hidden filter__input-checkbox filter__input" type="checkbox" name="color"
                 id="checkbox-white" checked>
               <label for="checkbox-white">Белый</label>
             </li>
-            <li class="filter-option color-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="color"
+            <li class="filter__option color__checkbox">
+              <input class="visually-hidden filter__input-checkbox filter__input" type="checkbox" name="color"
                 id="checkbox-gray" checked>
               <label for="checkbox-gray">Серый</label>
             </li>
-            <li class="filter-option color-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="color"
+            <li class="filter__option color__checkbox">
+              <input class="visually-hidden filter__input-checkbox filter__input" type="checkbox" name="color"
                 id="checkbox-tiffany">
               <label for="checkbox-tiffany">&laquo;Тиффани&raquo;</label>
             </li>
-            <li class="filter-option color-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="color"
+            <li class="filter__option color__checkbox">
+              <input class="visually-hidden filter__input-checkbox filter__input" type="checkbox" name="color"
                 id="checkbox-black">
               <label for="checkbox-black">Черный</label>
             </li>
-            <li class="filter-option color-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="color"
+            <li class="filter__option color__checkbox">
+              <input class="visually-hidden filter__input-checkbox filter__input" type="checkbox" name="color"
                 id="checkbox-pink">
               <label for="checkbox-pink">Розовый</label>
             </li>
-            <li class="filter-option color-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="color"
+            <li class="filter__option color__checkbox">
+              <input class="visually-hidden filter__input-checkbox filter__input" type="checkbox" name="color"
                 id="checkbox-orange">
               <label for="checkbox-orange">Оранжевый</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="filter name">
-          <legend class="filter-heading name-heading">ФИО</legend>
-          <ul class="name-list">
-            <li class="filter-option name-input">
-              <input class="filter-input-name filter-input" type="text" name="name" id="name-firstname"
+        </div>
+      </fieldset>
+      <fieldset class="filter name">
+        <legend class="filter__heading name__heading">ФИО</legend>
+        <div class="container">
+          <span class="filter__heading pseudo-legend">ФИО</span>
+          <ul class="filter__option-wrapper name-list">
+            <li class="filter__option name__input">
+              <input class="filter__input-name filter__input" type="text" name="name" id="name-firstname"
                 placeholder="Введите ваше имя*" required>
               <label class="name-label" for="name-firstname">Имя:</label>
             </li>
-            <li class="filter-option name-input">
-              <input class="filter-input-name filter-input" type="text" name="name" id="name-lastname"
+            <li class="filter__option name__input">
+              <input class="filter__input-name filter__input" type="text" name="name" id="name-lastname"
                 placeholder="Укажите фамилию*" required>
               <label class="name-label" for="name-lastname">Фамилия:</label>
             </li>
-            <li class="filter-option name-input">
-              <input class="filter-input-name filter-input" type="text" name="name" id="name-patronymic"
+            <li class="filter__option name__input">
+              <input class="filter__input-name filter__input" type="text" name="name" id="name-patronymic"
                 placeholder="Отчество, если желаете*" required>
               <label class="name-label" for="name-patronymic">Отчество:</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="filter telephone">
-          <legend class="filter-heading telephone-heading">Тел</legend>
-          <div class="filter-option telephone-input">
-            <input class="filter-input filter-input-telephone" type="tel" name="telephone" id="telephone-id"
+        </div>
+      </fieldset>
+      <fieldset class="filter telephone">
+        <legend class="filter__heading telephone__heading">Тел</legend>
+        <div class="container">
+          <span class="filter__heading pseudo-legend">Тел</span>
+          <div class="filter__option-wrapper filter__option telephone__input">
+            <input class="filter__input filter__input-telephone" type="tel" name="telephone" id="telephone-id"
               placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             <label class="telephone-label" for="telephone-id"></label>
           </div>
-        </fieldset>
-        <fieldset class="filter email">
-          <legend class="filter-heading email-heading">E-mail</legend>
-          <div class="filter-option email-input">
-            <input class="filter-input filter-input-email" type="email" name="email" id="email-id"
+        </div>
+      </fieldset>
+      <fieldset class="filter email">
+        <legend class="filter__heading email__heading">E-mail</legend>
+        <div class="container">
+          <span class="filter__heading pseudo-legend">E-mail</span>
+          <div class="filter__option-wrapper filter__option email__input">
+            <input class="filter__input filter__input-email" type="email" name="email" id="email-id"
               placeholder="Ваш Email*" required>
             <label class="email-label" for="email-id"></label>
           </div>
-        </fieldset>
-        <fieldset class="filter extra">
-          <legend class="filter-heading extra-heading">Доп</legend>
-          <div class="filter-option extra-input">
-            <textarea class="textarea-extra" name="extra" id="extra-id"
+        </div>
+      </fieldset>
+      <fieldset class="filter extra">
+        <legend class="filter__heading extra__heading">Доп</legend>
+        <div class="container">
+          <span class="filter__heading pseudo-legend">Доп</span>
+          <div class="filter__option-wrapper filter__option extra__input">
+            <textarea class="extra__textarea" name="extra" id="extra-id"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
-        </fieldset>
+        </div>
+      </fieldset>
+      <div class="form-controls container">
         <span class="form-tip">*Поля обязательны для заполнения</span>
         <button class="standart-button" type="submit">Отправить заказ</button>
-      </form>
-    </div>
+      </div>
+    </form>
   </main>
 
   <footer class="main-footer">

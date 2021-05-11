@@ -1,0 +1,10 @@
+.form-content {
+  &.container {
+
+    @include tablets {
+      max-width: unset;
+    }
+  }
+}
+
+@import "./order-form.scss";

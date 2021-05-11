@@ -7,16 +7,19 @@
 
   &.container {
     width: 100%;
+    max-width: unset;
     margin: 0;
     padding: 0;
 
     @include tablets {
-      width: 668px;
+      // width: 668px;
+      max-width: 668px;
       margin: 0 auto;
     }
 
     @include desktop {
-      width: 1150px;
+      // width: 1150px;
+      max-width: 1050px;
     }
   }
 

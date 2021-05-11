@@ -1,24 +1,35 @@
 .email {
   margin-bottom: 35px;
-}
 
-.email-heading {
-  margin-bottom: 5px;
-}
+  &__heading {
+    margin-bottom: 5px;
 
-.filter-option .email-label {
-  margin: 0;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 32px;
-    height: 21px;
-    position: absolute;
-    top: 15px;
-    right: 7px;
-    background-image: url(../img/email.svg);
-    background-repeat: no-repeat;
+    @include tablets {
+      margin-bottom: 0;
+    }
   }
 
+  @include tablets {
+    margin-bottom: 50px;
+    padding: 12px 0 50px 0;
+    background-color: $biege;
+  }
+}
+
+.filter__option {
+  .email-label {
+    margin: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 32px;
+      height: 21px;
+      position: absolute;
+      top: 15px;
+      right: 7px;
+      background-image: url(../../img/icons/email.svg);
+      background-repeat: no-repeat;
+    }
+  }
 }

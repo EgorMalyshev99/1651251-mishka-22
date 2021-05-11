@@ -1,24 +1,28 @@
 .name {
   margin-bottom: 35px;
-}
 
-.name-heading {
-  margin-bottom: 28px;
-}
+  &__heading {
+    margin-bottom: 28px;
 
-.name-input {
-  flex-direction: column;
-
-  +.name-input {
-    margin-top: 22px;
+    @include tablets {
+      margin-bottom: 0;
+    }
   }
 
-  .filter-input-name {
-    order: 2;
-  }
+  &__input {
+    flex-direction: column;
 
-  .name-label {
-    order: 1;
-    margin-left: 0;
+    +.name__input {
+      margin-top: 22px;
+    }
+
+    .filter__input-name {
+      order: 2;
+    }
+
+    .name-label {
+      order: 1;
+      margin-left: 0;
+    }
   }
 }

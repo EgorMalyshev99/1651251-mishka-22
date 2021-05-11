@@ -1,37 +1,79 @@
 .color {
   margin-bottom: 33px;
-}
 
-.color-heading {
-  margin-bottom: 35px;
-}
+  &__heading {
+    margin-bottom: 35px;
 
-.color-checkbox {
-  height: 38px;
-  display: flex;
-  align-items: center;
-
-  +.color-checkbox {
-    margin-top: 23px;
+    @include tablets {
+      margin-bottom: 0;
+    }
   }
 
-  label::before {
-    width: 38px;
+  &__list {
+    @include tablets {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      row-gap: 24px;
+    }
+  }
+
+  &__checkbox {
     height: 38px;
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: -61px;
-    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+
+    +.color__checkbox {
+      margin-top: 23px;
+
+      @include tablets {
+        margin-top: 0;
+      }
+    }
+
+    label::before {
+      width: 38px;
+      height: 38px;
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -61px;
+      border: 2px solid #000;
+
+      @include tablets {
+        width: 52px;
+        height: 52px;
+        left: -75px;
+        top: -17px;
+      }
+    }
+
+    @include tablets {
+      height: 52px;
+    }
+  }
+
+  @include tablets {
+    padding: 50px 0;
+    margin-bottom: 50px;
+    background-color: $biege;
   }
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter__input-checkbox:checked+label::after {
   width: 23px;
   height: 16px;
   content: "";
   position: absolute;
   left: -53px;
   top: 3px;
-  background-image: url(../img/done.svg);
+  background-image: url(../../img/icons/done.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablets {
+    width: 32px;
+    height: 22px;
+    top: -2px;
+    left: -65px;
+  }
 }
