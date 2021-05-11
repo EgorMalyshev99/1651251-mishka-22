@@ -8,6 +8,15 @@
   font-size: 13px;
   color: $darkgray;
 
+  &.container {
+    max-width: unset;
+    padding: unset;
+
+    @include desktop {
+      max-width: 812px;
+    }
+  }
+
   @include tablets {
     max-width: 668px;
     margin-top: 66px;
@@ -24,6 +33,10 @@
     @include tablets {
       width: 230px;
     }
+
+    @include desktop {
+      margin-right: 159px;
+    }
   }
 
   &.container {
@@ -35,6 +48,10 @@
       width: 668px;
       margin: 0 auto;
     }
+
+    @include desktop {
+      width: 812px;
+    }
   }
 
   @include tablets {
@@ -42,6 +59,10 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
   }
 }
 
@@ -100,6 +121,10 @@
         margin-left: 25%;
         flex-grow: 1;
       }
+
+      @include desktop {
+        margin-left: 15%;
+      }
     }
 
     label {
@@ -143,6 +168,10 @@
     @include tablets {
       width: 668px;
       margin: 0 auto;
+    }
+
+    @include desktop {
+      width: 812px;
     }
   }
 

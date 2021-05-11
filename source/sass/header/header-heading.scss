@@ -1,5 +1,5 @@
 .header-heading {
-  padding: 100px 0 75px 0;
+  padding: 73px 0;
   background-image: none;
   background-position-y: 0;
   background-color: $biege;
@@ -8,4 +8,12 @@
   align-items: center;
 
   &__text {}
+
+  @include tablets {
+    padding: 101px 0 75px 0;
+  }
+
+  @include desktop {
+    padding: 102px 0 93px 0;
+  }
 }

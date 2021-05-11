@@ -25,6 +25,12 @@
       font-size: 43px;
       line-height: 50px;
     }
+
+    @include desktop {
+      margin-bottom: 320px;
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 
   @include tablets {

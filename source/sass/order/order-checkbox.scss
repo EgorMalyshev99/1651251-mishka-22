@@ -15,6 +15,10 @@
       grid-template-columns: 50% 50%;
       row-gap: 24px;
     }
+
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   &__checkbox {
@@ -49,6 +53,10 @@
 
     @include tablets {
       height: 52px;
+    }
+
+    @include desktop {
+      width: 260px;
     }
   }
 

@@ -2,6 +2,10 @@
   padding-top: 30px;
   margin-bottom: 30px;
 
+  &__list {
+    display: flex;
+  }
+
   @include tablets {
     padding-top: 79px;
     margin-bottom: 53px;

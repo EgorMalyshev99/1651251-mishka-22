@@ -1,11 +1,15 @@
 @import "../elements/card.scss";
 
 .product {
-  &+.product {
+  +.product {
     margin-top: 30px;
 
     @include tablets {
       margin-top: 54px;
+    }
+
+    @include desktop {
+      margin-top: 0;
     }
   }
 
@@ -62,6 +66,10 @@
 
   @include tablets {
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    flex-direction: column;
   }
 }

@@ -23,6 +23,15 @@
     .name-label {
       order: 1;
       margin-left: 0;
+
+      @include desktop {
+        margin-right: 22px;
+      }
+    }
+
+    @include desktop {
+      flex-direction: row;
+      align-items: center;
     }
   }
 }
