@@ -2,7 +2,7 @@
   margin-bottom: 33px;
 
   &__heading {
-    margin-bottom: 35px;
+    margin-bottom: 26px;
 
     @include tablets {
       margin-bottom: 0;
@@ -52,7 +52,7 @@
       height: 38px;
       content: "";
       position: absolute;
-      top: -8px;
+      top: -11px;
       left: -61px;
       border: 2px solid $black;
 
@@ -86,7 +86,6 @@
   content: "";
   position: absolute;
   left: -53px;
-  top: 3px;
   background-image: url(../../img/icons/done.svg);
   background-repeat: no-repeat;
   background-size: cover;
