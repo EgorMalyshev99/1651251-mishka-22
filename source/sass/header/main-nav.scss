@@ -6,13 +6,17 @@
     width: 21px;
     height: 20px;
     position: absolute;
-    top: -47px;
+    top: -51px;
     right: 30px;
     border: none;
     outline: none;
     background-image: url(../../img/icons/menu-close.svg);
     background-repeat: no-repeat;
     background-color: #fff;
+
+    &.menu__closed {
+      top: -47px;
+    }
 
     @include tablets {
       display: none;

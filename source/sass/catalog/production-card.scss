@@ -1,7 +1,7 @@
 .production-card {
 
   &__top {
-    padding: 21px 13px 26px 34px;
+    padding: 26px 0 26px 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,7 +67,7 @@
   }
 
   &__heading {
-    margin-left: 25px;
+    margin-left: 31px;
 
     @include desktop {
       margin-left: 0;
@@ -84,7 +84,7 @@
   }
 
   &__bottom {
-    padding: 0 34px;
+    padding: 0 33px;
 
     .production-card__top {
       @include desktop {
@@ -106,7 +106,7 @@
   }
 
   &__text {
-    text-align: justify;
+    // text-align: start;
     margin-bottom: 41px;
 
     @include tablets {

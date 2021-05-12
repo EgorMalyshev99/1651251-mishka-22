@@ -51,7 +51,7 @@
   }
 
   &-description {
-    padding: 27px 28px 26px 28px;
+    padding: 28px 28px 26px 28px;
     display: flex;
     flex-direction: column;
     transition: box-shadow .3s ease;
@@ -67,7 +67,7 @@
     }
 
     &__bottom {
-      padding-top: 22px;
+      padding-top: 23px;
       border-top: 1px solid $gray;
       display: flex;
       align-items: center;
@@ -90,7 +90,7 @@
   }
 
   &__name {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transition: opacity .3s ease;
 
     @include desktop {
@@ -114,6 +114,11 @@
     @include tablets {
       font-size: 17px;
     }
+  }
+
+  &__icon {
+    margin-bottom: 4px;
+    margin-right: -3px;
   }
 
   @include tablets {
