@@ -30,7 +30,7 @@
     a {
       width: 100%;
       height: 103px;
-      padding: 0 36px;
+      padding: 0 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -41,8 +41,8 @@
     }
 
     &-text {
+      margin-bottom: 6px;
       font-family: "OpenSans", Arial, Helvetica, sans-serif;
-      ;
       font-weight: 700;
       font-size: 19px;
       color: $white;
@@ -51,6 +51,15 @@
         font-size: 20px;
         line-height: 30px;
       }
+    }
+
+    .bra {
+      margin-right: 6px;
+      margin-top: 2px;
+    }
+
+    .cub {
+      margin-right: -3px;
     }
 
     &:nth-child(1) {

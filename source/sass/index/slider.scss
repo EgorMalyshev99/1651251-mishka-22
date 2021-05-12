@@ -63,7 +63,7 @@
 
   &__text {
     width: 260px;
-    margin-bottom: 18px;
+    margin-bottom: 33px;
     font-size: 15px;
     line-height: 30px;
 
@@ -79,7 +79,7 @@
   }
 
   &__author {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     font-size: 17px;
     display: flex;
     flex-direction: column;
@@ -95,9 +95,10 @@
 }
 
 .author-name {
+  margin-bottom: 6px;
   font-family: "OpenSans", Arial, Helvetica, sans-serif;
-  ;
   font-weight: 700;
+  display: inline-block;
 }
 
 .next {
