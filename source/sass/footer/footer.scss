@@ -20,6 +20,25 @@
     justify-content: center;
   }
 
+  &__logo {
+    path {
+      transition: all .3s ease;
+    }
+
+    &:hover,
+    &:focus {
+      path {
+        fill: $aquamarine;
+      }
+    }
+
+    &:active {
+      path {
+        opacity: 0.3;
+      }
+    }
+  }
+
   @include tablets {
     padding-top: 50px;
     padding-bottom: 58px;

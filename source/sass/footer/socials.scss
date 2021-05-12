@@ -18,6 +18,23 @@
 
   &__link {
     width: 100%;
+
+    path {
+      transition: all .3s ease;
+    }
+
+    &:hover,
+    &:focus {
+      path {
+        fill: $aquamarine;
+      }
+    }
+
+    &:active {
+      path {
+        opacity: 0.3;
+      }
+    }
   }
 
   @include tablets {
@@ -27,19 +44,19 @@
 }
 
 .inst {
-  width: 22px;
-  height: 21px;
-  background-image: url(../../img/icons/socials/inst.svg);
+  // width: 22px;
+  // height: 21px;
+  // background-image: url(../../img/icons/socials/inst.svg);
 }
 
 .fb {
-  width: 15px;
-  height: 28px;
-  background-image: url(../../img/icons/socials/facebook.svg);
+  // width: 15px;
+  // height: 28px;
+  // background-image: url(../../img/icons/socials/facebook.svg);
 }
 
 .twitter {
-  width: 23px;
-  height: 20px;
-  background-image: url(../../img/icons/socials/twitter.svg);
+  // width: 23px;
+  // height: 20px;
+  // background-image: url(../../img/icons/socials/twitter.svg);
 }

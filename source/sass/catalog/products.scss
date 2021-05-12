@@ -3,12 +3,20 @@
   margin-bottom: 30px;
 
   &__list {
-    display: flex;
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   @include tablets {
     padding-top: 79px;
     margin-bottom: 53px;
+  }
+
+  @include desktop {
+    margin-bottom: 57px;
   }
 }
 

@@ -8,6 +8,8 @@
     width: 100%;
 
     @include tablets {}
+
+    @include desktop {}
   }
 
   &__heading {

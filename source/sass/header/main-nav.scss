@@ -95,6 +95,30 @@
   }
 
   &__item {
+
+    &:hover,
+    &:focus {
+      path {
+        opacity: 1;
+        fill: $aquamarine;
+      }
+
+      .nav-text {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      path {
+        opacity: 0.3;
+        fill: $aquamarine;
+      }
+
+      .nav-text {
+        opacity: 0.3;
+      }
+    }
+
     @include tablets {
       border-left: 1px solid rgba($color: $black, $alpha: 0.1);
     }
@@ -128,6 +152,19 @@
       }
     }
 
+    &:hover,
+    &:focus {
+      .nav-text {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      .nav-text {
+        opacity: 0.3;
+      }
+    }
+
     @include desktop {
       &:nth-child(1) {
         padding-right: 35px;
@@ -137,6 +174,12 @@
         padding-left: 35px;
       }
     }
+  }
+
+  &__link {
+    height: 100%;
+    align-items: center;
+    display: flex;
   }
 
   &-icon {
@@ -211,6 +254,19 @@
     .nav-text {
       font-size: 15px;
     }
+
+    &:hover,
+    &:focus {
+      .nav-text {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      .nav-text {
+        opacity: 0.3;
+      }
+    }
   }
 
   &::after {
@@ -235,6 +291,7 @@
   font-family: "OpenSans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 17px;
+  transition: opacity .3s ease;
 
   @include tablets {
     margin-left: 0;

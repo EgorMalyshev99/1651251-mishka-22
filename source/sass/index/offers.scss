@@ -60,6 +60,39 @@
     &:nth-child(2) {
       background-color: $darkaquamarine;
     }
+
+    &:hover,
+    &:focus {
+      .offers__item-icon {
+        g {
+          opacity: 0.7;
+
+          path {
+            opacity: 1;
+          }
+        }
+
+        path {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:active {
+      .offers__item-icon {
+        g {
+          opacity: 0.3;
+
+          path {
+            opacity: 1;
+          }
+        }
+
+        path {
+          opacity: 0.3;
+        }
+      }
+    }
   }
 
   @include tablets {

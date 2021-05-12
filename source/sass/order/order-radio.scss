@@ -11,14 +11,23 @@
     }
   }
 
-  &__list {
-    // float: right;
-  }
-
   &__radio {
     height: 42px;
     display: flex;
     align-items: center;
+
+    &:hover,
+    &:focus {
+      label::before {
+        border: 2px solid $aquamarine;
+      }
+    }
+
+    &:active {
+      label::before {
+        border: 2px solid rgba(0, 0, 0, 0.3);
+      }
+    }
 
     label::before {
       width: 42px;

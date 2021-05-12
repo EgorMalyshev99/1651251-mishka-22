@@ -86,6 +86,13 @@
 
     p {
       border-bottom: 1px solid $aquamarine;
+      transition: all .3s ease;
+
+      &:hover,
+      &:focus {
+        color: $aquamarine;
+        border-color: #46c1af10;
+      }
     }
 
     @include desktop {

@@ -18,6 +18,16 @@
     border: 2px solid $darkgray;
     resize: none;
 
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 2px solid $aquamarine;
+    }
+
+    &:active {
+      border: 2px solid $aquamarine;
+    }
+
     @include placeholder {
       font-size: 17px;
       line-height: 18px;

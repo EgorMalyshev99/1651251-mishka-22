@@ -151,6 +151,16 @@
     line-height: 18px;
     color: $black;
 
+    &:hover,
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $aquamarine;
+    }
+
+    &:active {
+      border-bottom: 2px solid $aquamarine;
+    }
+
     @include placeholder {
       font-size: 17px;
       line-height: 18px;
