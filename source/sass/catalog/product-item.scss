@@ -76,6 +76,10 @@
       @include tablets {
         padding-top: 26px;
       }
+
+      @include desktop {
+        padding-top: 24px;
+      }
     }
 
     @include tablets {
@@ -87,6 +91,7 @@
 
     @include desktop {
       width: 100%;
+      padding-left: 28px;
       flex-grow: 1;
     }
   }
@@ -96,7 +101,7 @@
     transition: opacity .3s ease;
 
     @include desktop {
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
   }
 

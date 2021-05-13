@@ -45,6 +45,10 @@
         top: -16px;
         left: -78px;
       }
+
+      @include desktop {
+        left: -81px;
+      }
     }
 
     +.type__radio {
@@ -80,5 +84,9 @@
     height: 23px;
     top: -2px;
     left: -63px;
+  }
+
+  @include desktop {
+    left: -66px;
   }
 }

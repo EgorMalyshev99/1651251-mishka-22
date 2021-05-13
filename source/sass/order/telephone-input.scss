@@ -9,6 +9,12 @@
     }
   }
 
+  &__input {
+    @include desktop {
+      padding-right: 115px;
+    }
+  }
+
   @include tablets {
     padding: 50px 0 12px 0;
     margin-bottom: 0;
@@ -19,6 +25,10 @@
 .filter__input-telephone {
   @include tablets {
     padding-left: 16px;
+  }
+
+  @include desktop {
+    padding-left: 20px;
   }
 }
 
@@ -39,6 +49,10 @@
 
       @include tablets {
         right: 27px;
+      }
+
+      @include desktop {
+        right: 8px;
       }
     }
   }

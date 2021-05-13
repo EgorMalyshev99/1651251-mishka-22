@@ -118,6 +118,7 @@
 
     @include desktop {
       text-align: start;
+      margin-bottom: 52px;
     }
   }
 
@@ -130,6 +131,7 @@
 
     @include desktop {
       width: 230px;
+      margin-left: 2px;
     }
   }
 

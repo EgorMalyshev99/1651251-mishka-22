@@ -11,6 +11,10 @@
     }
   }
 
+  &__input {
+    padding-right: 115px;
+  }
+
   &__textarea {
     padding: 17px;
     width: 100%;
@@ -42,5 +46,9 @@
 
   @include tablets {
     margin-bottom: 51px;
+  }
+
+  @include desktop {
+    margin-bottom: 49px;
   }
 }

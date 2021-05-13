@@ -18,7 +18,8 @@
     }
 
     @include desktop {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 30% 30% 30%;
+      column-gap: 17px;
     }
   }
 
@@ -63,6 +64,10 @@
         left: -80px;
         top: -17px;
       }
+
+      @include desktop {
+        top: -20px;
+      }
     }
 
     @include tablets {
@@ -78,6 +83,10 @@
     padding: 50px 0;
     margin-bottom: 50px;
     background-color: $biege;
+  }
+
+  @include desktop {
+    margin-bottom: 49px;
   }
 }
 
@@ -96,5 +105,10 @@
     height: 22px;
     top: -2px;
     left: -70px;
+  }
+
+  @include desktop {
+    top: -5px;
+    left: -71px;
   }
 }
