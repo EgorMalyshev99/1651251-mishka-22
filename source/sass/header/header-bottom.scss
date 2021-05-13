@@ -20,14 +20,15 @@
 
     @include tablets {
       width: 100%;
-      margin-top: 154px;
+      margin-top: 155px;
       margin-bottom: 372px;
       font-size: 43px;
       line-height: 50px;
     }
 
     @include desktop {
-      margin-bottom: 320px;
+      margin-top: 158px;
+      margin-bottom: 354px;
       font-size: 53px;
       line-height: 57px;
     }
@@ -40,9 +41,9 @@
   }
 
   @include desktop {
-    @include image-1x(url('../../img/index/hero/hero-desktop-1x.jpg'), center, -40px);
-    @include image-2x(url('../../img/index/hero/hero-desktop-2x.jpg'), center, -40px);
-    @include image-4x(url('../../img/index/hero/hero-desktop-4x.jpg'), center, -40px);
+    @include image-1x(url('../../img/index/hero/hero-desktop-1x.jpg'), center);
+    @include image-2x(url('../../img/index/hero/hero-desktop-2x.jpg'), center);
+    @include image-4x(url('../../img/index/hero/hero-desktop-4x.jpg'), center);
   }
 }
 

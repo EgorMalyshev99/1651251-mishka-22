@@ -28,20 +28,25 @@
         width: 47px;
         height: 81px;
         position: absolute;
-        right: 0;
-        top: -15px;
+        right: 3px;
+        top: -22px;
         background-image: url(../../img/icons/flag.svg);
         background-repeat: no-repeat;
       }
 
       @include desktop {
         right: unset;
+        top: -16px;
         left: -111px;
       }
     }
 
     @include tablets {
-      margin-bottom: 49px;
+      margin-bottom: 52px;
+    }
+
+    @include desktop {
+      margin-bottom: 33px;
     }
   }
 
@@ -66,12 +71,13 @@
   }
 
   @include tablets {
-    padding-top: 85px;
+    padding-top: 83px;
+    padding-bottom: 58px;
   }
 
   @include desktop {
     position: relative;
-    padding-top: 173px;
+    padding-top: 171px;
     padding-bottom: 105px;
   }
 }
@@ -97,10 +103,11 @@
     }
 
     @include tablets {
-      margin-right: 30px;
+      margin-right: 52px;
     }
 
     @include desktop {
+      line-height: 36px;
       margin-bottom: 25px;
     }
   }
@@ -114,17 +121,27 @@
     font-size: 14px;
     display: flex;
     align-items: flex-start;
+
+    @include tablets {
+      font-size: 17px;
+    }
   }
 
   &__name {
     margin-right: 33px;
+
+    @include tablets {
+      margin-right: 24px;
+    }
   }
 
   @include tablets {
+    margin-bottom: 46px;
     flex-direction: row;
   }
 
   @include desktop {
+    margin-bottom: 84px;
     flex-direction: column;
   }
 }

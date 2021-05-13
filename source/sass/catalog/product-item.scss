@@ -80,6 +80,8 @@
 
     @include tablets {
       width: 50%;
+      padding-left: 32px;
+      padding-bottom: 22px;
       justify-content: space-between;
     }
 
@@ -119,6 +121,11 @@
   &__icon {
     margin-bottom: 4px;
     margin-right: -3px;
+
+    @include tablets {
+      margin-bottom: 9px;
+      margin-right: 4px;
+    }
   }
 
   @include tablets {

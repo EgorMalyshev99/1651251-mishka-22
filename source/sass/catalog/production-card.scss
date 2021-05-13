@@ -7,7 +7,7 @@
     justify-content: space-between;
 
     @include tablets {
-      padding: 39px 13px 29px 42px;
+      padding: 40px 13px 25px 42px;
       order: 1;
       justify-content: flex-start;
     }
@@ -69,8 +69,11 @@
   &__heading {
     margin-left: 31px;
 
-    @include desktop {
+    @include tablets {
       margin-left: 0;
+    }
+
+    @include desktop {
       margin-top: 27px;
       margin-bottom: 27px;
     }

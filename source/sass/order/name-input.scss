@@ -14,24 +14,36 @@
 
     +.name__input {
       margin-top: 22px;
+
+      @include tablets {
+        margin-top: 24px;
+      }
     }
 
     .filter__input-name {
       order: 2;
+
+      @include tablets {
+        padding-left: 16px;
+      }
     }
 
     .name-label {
       order: 1;
       margin-left: 0;
 
-      @include desktop {
-        margin-right: 22px;
+      @include tablets {
+        margin-right: 26px;
       }
     }
 
-    @include desktop {
+    @include tablets {
       flex-direction: row;
       align-items: center;
     }
+  }
+
+  @include tablets {
+    margin-bottom: 50px;
   }
 }

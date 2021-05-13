@@ -12,8 +12,9 @@
   &__list {
     @include tablets {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 48% 48%;
       row-gap: 24px;
+      column-gap: 4%;
     }
 
     @include desktop {
@@ -59,7 +60,7 @@
       @include tablets {
         width: 52px;
         height: 52px;
-        left: -75px;
+        left: -80px;
         top: -17px;
       }
     }
@@ -94,6 +95,6 @@
     width: 32px;
     height: 22px;
     top: -2px;
-    left: -65px;
+    left: -70px;
   }
 }

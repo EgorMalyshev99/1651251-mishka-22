@@ -36,6 +36,7 @@
       justify-content: space-between;
 
       @include tablets {
+        padding: 0 34px;
         height: 119px;
       }
     }

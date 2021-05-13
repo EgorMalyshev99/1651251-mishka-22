@@ -43,12 +43,16 @@
         width: 52px;
         height: 52px;
         top: -16px;
-        left: -75px;
+        left: -78px;
       }
     }
 
     +.type__radio {
       margin-top: 8px;
+
+      @include tablets {
+        margin-top: 24px;
+      }
     }
 
     @include tablets {
@@ -75,6 +79,6 @@
     width: 23px;
     height: 23px;
     top: -2px;
-    left: -60px;
+    left: -63px;
   }
 }

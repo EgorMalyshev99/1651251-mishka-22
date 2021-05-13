@@ -29,14 +29,18 @@
     }
 
     @include placeholder {
-      font-size: 17px;
+      font-size: 19px;
       line-height: 18px;
       color: $black;
       opacity: 0.3;
     }
+
+    @include tablets {
+      padding: 14px;
+    }
   }
 
   @include tablets {
-    margin-bottom: 53px;
+    margin-bottom: 51px;
   }
 }

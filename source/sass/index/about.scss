@@ -6,6 +6,10 @@
     margin-bottom: 27px;
 
     @include tablets {
+      margin-bottom: 44px;
+    }
+
+    @include desktop {
       margin-bottom: 40px;
     }
   }
@@ -15,15 +19,15 @@
     gap: 30px;
 
     @include tablets {
-      grid-template-columns: 45% 45%;
+      grid-template-columns: 40% 45%;
       grid-template-rows: repeat(3, 1fr);
-      row-gap: 60px;
+      row-gap: 56px;
       column-gap: 10%;
       grid-auto-flow: column;
     }
 
     @include desktop {
-      grid-template-columns: 44% 44%;
+      grid-template-columns: 40% 40%;
       column-gap: 0%;
     }
   }
@@ -93,6 +97,7 @@
   }
 
   @include desktop {
+    padding-top: 67px;
     padding-bottom: 90px;
   }
 }

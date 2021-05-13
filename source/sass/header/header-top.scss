@@ -50,12 +50,16 @@
       }
 
       @include desktop {
-        width: 136px;
+        width: 149px;
       }
     }
 
     @include tablets {
       margin: 0;
+    }
+
+    @include desktop {
+      margin-right: 26px;
     }
   }
 }

@@ -15,7 +15,7 @@
     }
 
     @include desktop {
-      margin-bottom: 35px;
+      margin-bottom: 38px;
     }
   }
 
@@ -30,7 +30,7 @@
         width: unset;
         // margin-top: 10px;
         position: absolute;
-        top: 115px;
+        top: 100px;
         right: 0;
       }
 
@@ -58,13 +58,14 @@
 
     @include tablets {
       width: 100px;
+      margin-right: 14px;
       text-align: center;
     }
 
     @include desktop {
       position: absolute;
-      top: 66px;
-      left: 0;
+      top: 68px;
+      left: 32px;
     }
   }
 
@@ -82,7 +83,7 @@
 
     @include tablets {
       width: 292px;
-      margin: 0 0 48px 0;
+      margin: 0 0 43px 0;
       font-size: 17px;
       line-height: 30px;
     }
@@ -102,6 +103,10 @@
 
         &:nth-child(1) {
           width: 37%;
+
+          @include tablets {
+            width: 33%;
+          }
         }
       }
 
@@ -128,11 +133,11 @@
     align-items: center;
 
     @include tablets {
-      margin-top: 57px;
+      margin-top: 56px;
     }
 
     @include desktop {
-      margin-top: 100px;
+      margin-top: 110px;
     }
   }
 
@@ -157,7 +162,7 @@
   }
 
   @include tablets {
-    padding-top: 40px;
+    padding-top: 52px;
     padding-bottom: 52px;
   }
 

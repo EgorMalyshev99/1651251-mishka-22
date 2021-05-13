@@ -24,12 +24,16 @@
     }
   }
 
+  @include tablets {
+    margin-bottom: 55px;
+  }
+
   @include desktop {
     // display: none;
     width: 1050px;
     margin: auto;
     position: absolute;
-    top: 83px;
+    top: 92px;
     left: 0;
     right: 0;
     z-index: -1;

@@ -32,7 +32,7 @@
     }
 
     @include desktop {
-      margin-bottom: 35px;
+      margin-bottom: 36px;
     }
   }
 
@@ -58,12 +58,12 @@
   @include tablets {
     height: 457px;
     margin-bottom: 68px;
-    padding-top: 83px;
+    padding-top: 81px;
     padding-bottom: 47px;
   }
 
   @include desktop {
-    padding-top: 78px;
+    padding-top: 77px;
     padding-bottom: 96px;
   }
 }
