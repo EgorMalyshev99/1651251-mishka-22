@@ -162,7 +162,8 @@
               </picture>
               <div class="baskets__cost">
                 <span class="cost">Цена: 990 руб.</span>
-                <button type="submit" class="standart-button baskets__button">Заказать</button>
+                <button type="button" class="standart-button baskets__button"
+                  onclick="showModal(modalBaskets)">Заказать</button>
               </div>
             </div>
           </div>
@@ -413,8 +414,35 @@
       </div>
     </footer>
 
+    <div class="global-shadow"></div>
+
+    <section class="modal modal-basket">
+      <div class="modal-basket__inner">
+        <h2 class="second-heading modal-basket__heading">Добавить в корзину</h2>
+        <span class="modal__text">Выберите размер</span>
+        <form class="size-form" method="get" action="https://echo.htmlacademy.ru">
+          <ul class="size-buttons">
+            <li class="size-buttons__radio">
+              <input class="visually-hidden size-buttons__input" type="radio" name="size" id="size-s" checked>
+              <label for="size-s">S</label>
+            </li>
+            <li class="size-buttons__radio">
+              <input class="visually-hidden size-buttons__input" type="radio" name="size" id="size-m">
+              <label for="size-m">M</label>
+            </li>
+            <li class="size-buttons__radio">
+              <input class="visually-hidden size-buttons__input" type="radio" name="size" id="size-l">
+              <label for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="standart-button modal-button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+
     <script defer src="./js/app.js"></script>
     <script defer src="./js/slider.js"></script>
+    <script defer src="./js/modal.js"></script>
   </body>
 
   </html>

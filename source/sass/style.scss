@@ -154,5 +154,8 @@ input[type="radio"].visually-hidden {
 /****Footer****/
 @import "./footer/footer.scss";
 
+/****Modals****/
+@import "./elements/modal.scss";
+
 /****Visibility****/
 @import "./elements/adaptive-visibility.scss";
