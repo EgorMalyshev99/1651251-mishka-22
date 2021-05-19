@@ -109,3 +109,9 @@
     flex-direction: row;
   }
 }
+
+.index-header .zigzag-filled::after {
+  @include desktop {
+    background-image: url(../../img/icons/zigzag-fill-desktop__index.svg);
+  }
+}
