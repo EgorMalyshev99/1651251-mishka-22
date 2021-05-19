@@ -1060,10 +1060,11 @@ input[type="radio"].visually-hidden {
       flex-direction: column; } }
 
 .map {
-  margin-bottom: 42px; }
+  margin-bottom: 49px; }
   .map__inner {
     width: 100%;
     height: 454px;
+    position: relative;
     background-position: center; }
     @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 1dppx) {
       .map__inner {
@@ -1125,6 +1126,13 @@ input[type="radio"].visually-hidden {
       background-position: 100% 0%;
       background-size: cover;
       background-repeat: no-repeat; } }
+    .map__inner::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 100px;
+      background-image: url(../../img/icons/map-pin.svg);
+      background-size: cover; }
   @media screen and (min-width: 767px) {
     .map {
       margin-bottom: 55px; } }

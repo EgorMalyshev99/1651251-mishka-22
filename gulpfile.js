@@ -18,12 +18,6 @@ const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const rename = require("gulp-rename");
 const del = require('del');
-const {
-  reload
-} = require("browser-sync");
-const {
-  series
-} = require("gulp");
 
 // HTML
 
@@ -54,7 +48,7 @@ const styles = () => {
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
@@ -152,18 +146,21 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = done => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  // gulp.series("source/*.html", gulp.series(html, reload));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  // gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/js/*.js", gulp.series(scripts))
 }
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
 
 // Build
 
@@ -173,9 +170,9 @@ const myBuild = gulp.series(
     html,
     styles,
     scripts,
-    // images,
-    // sprite,
-    // createWebp,
+    images,
+    sprite,
+    createWebp,
     copy
   )
 );
@@ -187,7 +184,6 @@ exports.build = myBuild;
 exports.default = gulp.series(
   clean,
   gulp.parallel(
-    styles,
     html,
     scripts,
     // images,
@@ -196,6 +192,7 @@ exports.default = gulp.series(
     copy
   ),
   gulp.series(
+    styles,
     server,
     watcher
   )

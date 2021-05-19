@@ -1,9 +1,11 @@
 .map {
-  margin-bottom: 42px;
+  margin-bottom: 49px;
 
   &__inner {
     width: 100%;
     height: 454px;
+    position: relative;
+
     @include image-1x(url('../../img/index/map/map-mobile-1x.png'), center);
     @include image-2x(url('../../img/index/map/map-mobile-2x.png'), center);
     @include image-4x(url('../../img/index/map/map-mobile-4x.png'), center);
@@ -22,6 +24,15 @@
       @include image-2x(url('../../img/index/map/map-desktop-2x.png'), 100%);
       @include image-4x(url('../../img/index/map/map-desktop-4x.png'), 100%);
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 100px;
+      background-image: url(../../img/icons/map-pin.svg);
+      background-size: cover;
+    }
   }
 
   @include tablets {
@@ -29,7 +40,6 @@
   }
 
   @include desktop {
-    // display: none;
     width: 1050px;
     margin: auto;
     position: absolute;
