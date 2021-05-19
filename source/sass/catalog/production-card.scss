@@ -2,7 +2,7 @@
   border: 1px solid $gray;
 
   &__top {
-    padding: 26px 0 26px 34px;
+    padding: 24px 0 26px 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,19 +68,20 @@
   }
 
   &__heading {
-    margin-left: 31px;
+    margin-left: 24px;
 
     @include tablets {
       margin-left: 0;
     }
 
     @include desktop {
-      margin-top: 27px;
+      margin-top: 25px;
       margin-bottom: 27px;
     }
   }
 
   &__icon {
+    flex-shrink: 0;
 
     @include tablets {
       margin-right: 33px;
@@ -88,7 +89,7 @@
   }
 
   &__bottom {
-    padding: 0 33px;
+    padding: 0 32px;
 
     .production-card__top {
       @include desktop {
@@ -119,7 +120,7 @@
 
     @include desktop {
       text-align: start;
-      margin-bottom: 52px;
+      margin-bottom: 51px;
     }
   }
 

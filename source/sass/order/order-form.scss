@@ -1,9 +1,15 @@
 .order-form {
-  padding-bottom: 51px;
+  padding-bottom: 55px;
+
+  @include tablets {
+    padding-bottom: 51px;
+  }
 }
 
 .form-controls {
   .standart-button {
+    font-size: 17px;
+
     @include tablets {
       width: 230px;
     }
@@ -92,7 +98,7 @@
     &-wrapper {
 
       @include tablets {
-        margin-left: 167px;
+        margin-left: 168px;
         flex-grow: 1;
       }
 
@@ -148,7 +154,11 @@
       opacity: 0.3;
 
       @include tablets {
-        font-size: 19px;
+        font-size: 20px;
+      }
+
+      @include desktop {
+        // font-size: 19px;
       }
     }
   }

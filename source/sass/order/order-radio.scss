@@ -4,7 +4,7 @@
   margin-bottom: 30px;
 
   &__heading {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     @include tablets {
       margin-bottom: 0;
@@ -29,25 +29,31 @@
       }
     }
 
-    label::before {
-      width: 42px;
-      height: 42px;
-      content: "";
-      position: absolute;
-      top: -12px;
-      left: -61px;
-      border: 2px solid $black;
-      border-radius: 50%;
+    label {
+      margin-left: 0;
+      display: flex;
+      align-items: center;
 
-      @include tablets {
-        width: 52px;
-        height: 52px;
-        top: -16px;
-        left: -78px;
-      }
+      .radio-pseudo {
+        width: 42px;
+        height: 42px;
+        margin-right: 19px;
+        border: 2px solid $black;
+        border-radius: 50%;
+        display: inline-block;
+        flex-shrink: 0;
 
-      @include desktop {
-        left: -81px;
+        @include tablets {
+          width: 52px;
+          height: 52px;
+          margin-right: 28px;
+          top: -16px;
+          left: -78px;
+        }
+
+        @include desktop {
+          left: -81px;
+        }
       }
     }
 
@@ -74,19 +80,19 @@
   height: 18px;
   content: "";
   position: absolute;
-  left: -49px;
-  top: 0;
+  left: 12px;
+  top: 11px;
   background-color: $aquamarine;
   border-radius: 50%;
 
   @include tablets {
     width: 23px;
     height: 23px;
-    top: -2px;
-    left: -63px;
+    top: 14px;
+    left: 15px;
   }
 
   @include desktop {
-    left: -66px;
+    left: 15px;
   }
 }

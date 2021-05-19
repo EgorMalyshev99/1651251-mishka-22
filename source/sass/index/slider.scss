@@ -107,6 +107,11 @@
 
   @include tablets {
     margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  @include desktop {
+    font-size: 17px;
   }
 }
 

@@ -134,6 +134,14 @@
     }
   }
 
+  &:nth-last-child(1) .product-description {
+    padding-top: 25px;
+
+    @include tablets {
+      padding-top: 28px;
+    }
+  }
+
   @include tablets {
     flex-direction: row;
     justify-content: space-between;
