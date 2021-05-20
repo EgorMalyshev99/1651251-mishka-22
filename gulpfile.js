@@ -135,7 +135,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -156,7 +156,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles, reload));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles", reload));
   gulp.watch("source/*.html", gulp.series(html, reload));
   // gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/js/*.js", gulp.series(scripts))
