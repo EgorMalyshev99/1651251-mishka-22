@@ -25,26 +25,26 @@
       @include image-4x(url('../../img/index/map/map-desktop-4x.png'), 100%);
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 138px;
-      top: 145px;
-      width: 67px;
-      height: 100px;
-      background-image: url(../../img/icons/map-pin.svg);
-      background-size: cover;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 138px;
+    //   top: 145px;
+    //   width: 67px;
+    //   height: 100px;
+    //   background-image: url(../../img/icons/map-pin.svg);
+    //   background-size: cover;
 
-      @include tablets {
-        top: 139px;
-        left: 363px;
-      }
+    //   @include tablets {
+    //     top: 139px;
+    //     left: 363px;
+    //   }
 
-      @include desktop {
-        top: 145px;
-        left: 240px;
-      }
-    }
+    //   @include desktop {
+    //     top: 145px;
+    //     left: 240px;
+    //   }
+    // }
   }
 
   @include tablets {
@@ -58,7 +58,7 @@
     top: 92px;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
   }
