@@ -171,9 +171,9 @@ const myBuild = gulp.series(
     html,
     styles,
     scripts,
-    // images,
-    // sprite,
-    // createWebp,
+    images,
+    sprite,
+    createWebp,
     copy
   )
 );
